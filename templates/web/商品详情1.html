@@ -1,0 +1,173 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>商品详情页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="荐书网 http://www.itbool.com" />
+	{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static "css/商品详情.css" %}" />
+
+</head>
+    <body>
+    	<div id="info-header">
+    		<div id="logo">荐书网</div>
+                        <div class="menu">
+                <ul id="header-user">
+                    <li class="user-enroll">
+                        <a class="float_1" href="/regist">注册</a>
+                    </li>
+                    <li class="user">
+                        <a class="float_1" href="/login">登录</a>
+                    </li>
+
+                    <li class="user">
+                        <a class="float_1" href="/save">我的收藏</a>
+                    </li>
+                    <li class="user">
+                        <a class="float_1" href="/shopping_cart">我的购物车</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <form method="get" target="_blank">
+                    <input id="searchText">
+					<br>
+
+					<br>
+                </form>
+            </div>
+    	</div>
+
+
+    	<div id="info-main">
+    		<div id="info-lside">
+				<img src="\static\img\05.jpg">
+			</div>
+
+    		<div id="info-rside">
+
+    			<div id="rside-header">
+    				<h1>Java从入门到精通(第5五版) java语言程序设计电脑编程思想软件开发教程</h1>
+				    <li id="p1">ISBN：665926161</li>
+					<li id="p1">作者：莫言</li>
+					<li id="p1">评分：4.9</li>
+					<li id="p1">描述:编程用书</li>
+					
+    			</div>
+
+    			<div id="rside-price">
+    				<dl id="price">
+    					<dt class="dt-att" id="price2">
+    						价
+    						&nbsp;&nbsp;&nbsp;&nbsp;
+    						格:</dt>
+    					<dd id="price-china">￥
+    						<span>43.70</span>
+    					</dd>
+    				</dl>
+    			</div>
+
+
+    			<div id="rside-extra">
+    				<div class="extra">
+    					<dl>
+    					<dt>
+    						支
+    						&nbsp;&nbsp;&nbsp;&nbsp;
+    						持：
+    					</dt>
+    					<dd>
+    						<span class="sp">
+    							<i class="icon-support"></i>花呗分期
+    						</span>
+    						<span class="sp">
+    						    <i class="icon-support"></i>百城速达
+    						</span>
+    						<span class="sp">
+    							<i class="icon-support"></i>顺丰包邮
+    						</span>
+    						<span class="sp">
+    							<i class="icon-support"></i>七天无理由退货
+    						</span>
+    					</dd>
+    				    </dl>
+    				</div>
+						<br><br>
+    					<p id="p2">服务：本产品由荐书网负责发货并提供售后服务</p>
+ 		    </div>
+
+
+ 		    <div id="rside-info">
+    				<dl>
+    					<dt class="dt-att">
+    						<span>商品数量：</span>
+    					</dt>
+    					<dd>
+    						<div id="control-quantity">
+   							    <input id="quantity" name="count_products" type="number" value="1" min="1">
+    						</div>
+
+    						<div id="buy-it">
+    							<a class="btn" href="">加入购物车</a>
+    							<a class="btn" href="">立即购买</a>
+    						</div>
+                               <a class="favorite" href="">
+                               	<i class="icon-favorite"></i>
+                               	收藏
+                               </a>
+    					</dd>
+    				</dl>
+				</div>
+
+		</div>
+	</div>
+	
+
+
+    	<div id="footer">
+            <div class="footer_nav">
+                <a class="float_1" href="" target="_blank">公司简介</a>
+                <span class="sep">|</span>
+
+                <a class="float_1" href="" target="_blank">Investor Relations</a>
+                <span class="sep">|</span>
+
+                <a class="float_1" href="" target="_blank">诚聘英才</a>
+                <span class="sep">|</span>
+
+                <a class="float_1" href="" target="_blank">手机Desire</a>
+                <span class="sep">|</span>
+
+                <a class="float_1" href="" target="_blank">网站联盟</a>
+                <span class="sep">|</span>
+
+                <a class="float_1" href="" target="_blank">Desire招商</a>
+                <span class="sep">|</span>
+                
+                <a class="float_1" href="" target="_blank">机构销售</a>
+                <span class="sep">|</span>
+
+                <a class="float_1" href="" target="_blank">官方Blog</a>
+            </div>
+
+            <div class="footer_copyright">
+                <span>Copyright (C) Desire 2017, All Rights Reserved</span>
+            </div>
+
+            <div class="footer_copyright">
+                <a class="float_1" href="">京ICP证000000号</a>
+                <span class="sep">|</span>
+                <span>出版物经营许可证 南湖大道182号</span>
+                <span class="sep">|</span>
+                <span>食品流通许可证：SP1101011010021855(1-1)</span>
+                <br>
+                <span>互联网药品信息服务资格证编号：(京)-非经营性-0000-0000</span>
+                <span class="sep">|</span>
+                <span>京公网安备000000000000号</span>
+            </div>
+            
+        </div>
+    </body>
+</html>
+

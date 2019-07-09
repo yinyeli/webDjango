@@ -1,0 +1,107 @@
+<!DOCTYPE html >
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="荐书网" />
+<title>个人中心-荐书自营商城</title>
+    {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static "css/personal-Info.css" %}">
+<link rel="stylesheet" type="text/css" href="{% static "css/headandfooter.css" %}">
+</head>
+    <body>
+    	 <!---顶端消息栏-->
+        <div id="info-header">
+        <div id="logo"><a href="/home">荐书网</a></div>
+                        <div class="menu">
+                <ul id="header-user">
+                    <li class="user-enroll">
+                        <a class="float_1" href="/regist">注册</a>
+                    </li>
+                    <li class="user">
+                        <a class="float_1" href="/login">登录</a>
+                    </li>
+                    <li class="user">
+                        <a class="float_1" href="/save">我的收藏</a>
+                    </li>
+                    <li class="user">
+                        <a class="float_1" href="/shopping_cart">我的购物车</a>
+                    </li>
+                    <li class="user">
+                        <a class="float_1" href="/personal1">我的</a>
+                    </li>
+                    <li class="user">
+                        <a class="float_1" href="/">首页</a>
+                    </li>  
+                   
+                </ul>
+            </div>
+          </div>
+      <!---Desire商城搜索栏-->
+            <div class="search">
+                <form method="get" target="_blank">
+                    <input id="searchText">
+                    <span>
+                        <img src="\static\img\search.gif">
+                    </span>
+                </form>
+            </div>
+  
+
+<div>
+    	<div class="My-setting-header">
+    		个人信息
+    	</div>
+
+    	<div class="My-setting-main">
+    		<ul  class="setting clearfix">
+    			<li class="setting-img clearfix">
+    				    <div class="self-word">
+    					头像：</div>
+    					<a href="" target="_blank" dd_name="查看详情">
+                            <img src="\static\img\bai.jpg" height="80" width="80">
+                        </a>
+
+    			</li>
+                <li class="setting-input clearfix">
+                	    <div class="self-word2">
+    					昵称：</div>
+    					<input  class="input-Box" type="text" name="name">
+                </li>
+                <li class="setting-input clearfix">
+                	     <div class="self-word2">
+    					性别：</div>
+    					<label>
+                       <input class="J_sex" checked="checked" value="1" name="sex" type="radio">
+                         男
+                        </label>
+                         <label>
+                        <input class="J_sex"  value="2" name="sex" type="radio">
+                        女
+                        </label>
+                </li>
+                <li class="setting-input clearfix">
+                	 <div class="self-word2">
+    					个人简介：</div>
+    					<textarea class="J_description input-value" placeholder="关于职业，关于兴趣，关于…"></textarea>
+                </li>
+                <li class="setting-input clearfix">
+                	<div class="self-word2">
+    					手机号：</div>
+    				<div class="phone-number">
+    				13129901688</div>
+                </li>
+                <li class="setting-input clearfix">
+                	<div class="self-word2">
+                	 登录密码：</div>
+
+    					
+                </li>
+    		</ul>
+    	</div>
+    	<form class="save-setting clearfix" action="/change/" method="post">
+            <button id="setting-save" class="J_settingSave save"  imgchange="">修改密码</button>
+         </form>
+        </div>
+    	<div class="My-setting-footer"></div>
+    </body>
+</html>

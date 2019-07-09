@@ -1,0 +1,230 @@
+<!DOCTYPE html >
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="DESIRE自营网" />
+<title>订单详情页面-DESIRE自营商城</title>
+    {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static "css/inCommon.css" %}">
+<link rel="stylesheet" type="text/css" href="{% static "css/headandfooter.css" %}">
+<link rel="stylesheet" type="text/css" href="{% static "css/orderdetail.css" %}">
+</head>
+    <body>
+              <!---顶端消息栏-->
+        <div id="info-header">
+        <div id="logo"><a href="/home">DESIRE</a></div>
+                        <div class="menu">
+                <ul id="header-user">
+                    <li class="user-enroll">
+                        <a class="float_1" href="/regist">注册</a>
+                    
+                    <li class="user">
+                        <a class="float_1" href="/login">登录</a>
+                    
+                    <li class="user">
+                        <a class="float_1" href="">社区</a>
+                   
+                    <li class="user">
+                        <a class="float_1" href="">服务</a>
+                    
+                    <li class="user">
+                        <a class="float_1" href="/save">我的收藏</a>
+                    
+                    <li class="user">
+                        <a class="float_1" href="/shoppin_cart">我的购物车</a>
+                    
+                </ul>
+            </div>
+          </div>
+      <!---Desire商城搜索栏-->
+            <div class="search">
+                <form method="get" target="_blank">
+                    <input id="searchText">
+                    <span>
+                        <img src="\static\img\search.gif">
+                    </span>
+                </form>
+            </div>
+  
+
+<div>
+       
+        <!--订单信息栏-->
+        <div class="store-wrap">
+            <!--界面导航栏-->
+        	<div class="crumbs">
+        		<a href="//store.meizu.com/index.html">首页 > </a><!--换成商城首页链接-->
+                <a class="active" href="">我的订单 </a>
+        	</div>
+            <!--订单详情信息-->
+            <div class="main clearfix">
+            	<div class="left-nav f-fl">
+                   <div class="nav-main"> 
+                    <a href="javascript:;" class="type-title"><img src="\static\img\btn-comment@2x.png" class="icon-orderCenter"></i>订单中心</a>
+                    <a href="" class="float_1 active">我的订单</a>
+                    <a href="" class="float_1">我的回购单</a>
+                    <a href="" class="float_1">我的意外保</a>
+                    <a href="javascript:;" class="type-title"><img src="\static\img\btn-group@2x.png" class="icon-selfCenter"></i>个人中心</a>
+                    <a href="" class="float_1">地址管理</a>
+                    <a href="" class="float_1">我的收藏</a>
+                    <a href="" class="float_1">消息提醒</a>
+                    <a href="" class="float_1">建议反馈</a>
+                    <a href="javascript:;" class="type-title"><img src="\static\img\btn-emoji@2x.png" class="icon-moneyCenter"></i>资产中心</a>
+                    <a href="" class="float_1">我的优惠券</a>
+                    <a href="" class="float_1">我的红包</a>
+                    <a href="" class="float_1">我的回购券</a>
+                    <a href="javascript:;" class="type-title"><img src="\static\img\btn-send@2x.png" class="icon-serverCenter"></i>服务中心</a>
+                    <a href="" class="float_1" style="width: 105px">退款/退换货跟踪</a>
+                    <a href="" class="float_1">意外保修</a>
+                    <a href="" class="float_1">以旧换新</a>
+                  </div> 
+
+                </div>
+
+                <div class="right-content f-fr">
+                  <div class="orderdetail-main">
+                  	<div class="type-tab-btn">
+                        <a class="active allOrder"  href="javascript:;" >订单详情</a>
+                    </div>
+                    <div class="detail-main">
+                        <table  style="width:100%; height:300px">
+                            <tbody>
+                                <tr class="b-img2">
+
+                                  <td>
+                                    订单状态：<b class="order-state">已签收</b>
+                                  </td>
+
+                                 <!--<img src="../images/p-01-(2).png" ></i>-->
+                                </tr>
+                                <tr class="head-title">
+                                    <td class="title1">商品信息</td>
+                                    <td class="title2">价格</td>
+                                    <td class="title3">数量</td>
+                                </tr>
+                                <tr class="list-box" >
+                                 <td class="b-img1 ">
+                                 <img src="\static\img\24.jpg" width="120dp" height="120dp" ></i>
+                                 </td>
+                                 <td>
+
+                                 <div class="describe clearfix " >
+                                   <b class="productDetail">庭好DIY组装文具桌面办公收纳盒(粉色)化妆品整理箱</b>
+                                   <p>￥48.9×1</p>
+                                </div>
+                                 </td>
+                                 <td class="price">
+                                    <p>￥48.9 ×1</p>
+                                  </td>
+                                  <td class="goods-amount" >
+                                    <p>1</p>
+                                 </td>
+                                  </tr>
+                                <tr class="orderPage">
+                                    <td >
+                                    <div class="orderPage-count-position">
+                                     优惠：
+                                    <span>¥ 0 </span>
+                                      运费：
+                                     <span>¥ 0.00 </span>
+                                      应付：
+                                    <span id="totalFee" data-payfee="48.9">¥48.90</span>
+                                     </div>
+                                  </td>
+                                   
+                                </tr>
+                                <tr class="orderPage">
+                                    <td >
+                                        <div class="orderPages-info">
+                                        <span>订单类型：担保交易 </span>
+                                        <span>订单编号：SO170612203339820178721 </span>
+                                </div>
+                                    </td>
+                                </tr>
+                                <tr class="orderPage">
+                                    <td>
+                                        <div class="orderPages-info">
+                                       <span>订单状态：已完成 </span>
+                                      </div>
+                                    </td>
+                                </tr>
+                                <tr class="orderPage">
+                                    <td>
+                                        <div class="orderPages-info">
+                                       <span>下单时间：2017-06-12 20:33:39 </span>
+                                      </div>
+                                    </td>
+                                </tr>
+                                <tr class="orderPage">
+                                    <td>
+                                        <div class="orderPages-info">
+                                       <span>卖家电话：13811223935</span>
+                                       <span>官方客服电话：4009600168</span>
+                                      </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                   
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+ 
+
+
+        <div class="layout-footer clearfix">
+            <div class="footer_nav">
+                <a class="float_1" href="" target="_blank">公司简介</a>
+                <span class="sep">|</span>
+
+                <a class="float_1" href="" target="_blank">Investor Relations</a>
+                <span class="sep">|</span>
+
+                <a class="float_1" href="" target="_blank">诚聘英才</a>
+                <span class="sep">|</span>
+
+                <a class="float_1" href="" target="_blank">手机Desire</a>
+                <span class="sep">|</span>
+
+                <a class="float_1" href="" target="_blank">网站联盟</a>
+                <span class="sep">|</span>
+
+                <a class="float_1" href="" target="_blank">Desire招商</a>
+                <span class="sep">|</span>
+                
+                <a class="float_1" href="" target="_blank">机构销售</a>
+                <span class="sep">|</span>
+
+                <a class="float_1" href="" target="_blank">官方Blog</a>
+            </div>
+
+            <div class="footer_copyright">
+                <span>Copyright (C) Desire 2017, All Rights Reserved</span>
+            </div>
+
+            <div class="footer_copyright">
+                <a class="float_1" href="">京ICP证000000号</a>
+                <span class="sep">|</span>
+                <span>出版物经营许可证 南湖大道182号</span>
+                <span class="sep">|</span>
+                <span>食品流通许可证：SP1101011010021855(1-1)</span>
+                <br>
+                <span>互联网药品信息服务资格证编号：(京)-非经营性-0000-0000</span>
+                <span class="sep">|</span>
+                <span>京公网安备000000000000号</span>
+            </div>
+        </div>
+
+       
+    </body>
+</html>

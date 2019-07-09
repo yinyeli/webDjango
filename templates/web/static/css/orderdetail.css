@@ -1,0 +1,151 @@
+
+.orderdetail-main {
+    color: #666;
+    width: 100%;
+    padding-left:20px;
+}
+.type-tab-btn {
+
+    height: 41px;
+    margin-top: 20px;
+    border-bottom-color: #eee;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+.type-tab-btn a {
+    color: #666;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration-color: currentcolor;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    width: 100px;
+}
+.type-tab-btn .active {
+    border-bottom-color: #00c3f5;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    color: #00c3f5;
+}
+.orderdetail-main .detail-main{
+
+    margin-top: 20px;
+
+}
+.orderdetail-main .detail-main tr {
+    display: block;
+    width: 100%;
+}
+
+.b-img2
+{
+    width: 100%;
+    border-color: #eee;
+    border-style: solid;
+    border-width: 1px;
+    height:100px;
+    background-color:#eee;
+    color:#000000;
+    font-size:40px;
+}
+.head-title
+{
+    width: 100%;
+    border-color: #eee;
+    border-style: solid;
+    border-width: 1px;
+    height:30px;
+}
+.title1
+{
+  font-size:20px;
+  width:650px;
+}
+.title2
+{
+  font-size:20px;
+  width:150px;
+}
+.title3
+{
+  font-size:20px;
+  width:100px;
+}
+.list-box{
+    width: 100%;
+    border-color: #eee;
+    border-style: solid;
+    border-width: 1px;
+    height:120px;
+}
+.b-img1{
+    padding-left:20px;
+    width:150px ;
+    height:120px ;
+    align:center;
+    
+}
+.describe {
+    display: table;
+    line-height: 22px;
+    width: 470px;
+    position:relative;
+}
+.productDetail{
+    color: #333333;
+    margin-right: 45px;
+    font-size: 16px;
+}
+.price{
+    height:100%;
+    width: 180px;
+     color: #333333;
+    font-size: 14px;
+}
+.goods-amount{
+    height:100%;
+    width: 100px;
+     color: #333333;
+    font-size: 14px;
+}
+.orderPage{
+    width: 100%;
+    border-color: #eee;
+    border-style: solid;
+    border-width: 1px;
+    height: 55px;
+    font-size:16px;
+    
+}
+.orderPage-count-position{
+    height: 55px;
+    font-size:16px;
+    width: 939px;
+    line-height: 55px;
+    text-align: right;}
+.orderPages-info{
+    height: 55px;
+    font-size:16px;
+    width: 939px;
+    line-height: 55px;
+    text-align: left;
+ 
+}
+.orderPages-info span {
+    display: block;
+    float: left;
+    padding-right: 65px;
+    width: 43%;
+}
+
+.float_1{
+        text-decoration: none;
+    }

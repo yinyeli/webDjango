@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>商品添加</title>
+    {% load static %}
+    <link href={% static "css/商品添加base.css" %} rel="stylesheet" type="text/css"/>
+    <link href={% static "css/商品添加login.css" %} rel="stylesheet" type="text/css"/>
+    <link href={% static "css/商品添加register.css" %} rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="{% static "css/mygxin.css" %}"/>
+
+</head>
+<body>
+<div id="register" class="t">
+    <div class="loginContent c">
+        <div class="loginContentLogo l">
+            <div id="logo"><a href="/mygxin">荐书网</a></div>
+        </div>
+        <div class="goLogin r">
+        </div>
+    </div>
+    <div class="BodyBg t l">
+        <div class="reBodyMiddle c">
+            <div class="reBodyMiddleForm l">
+                <div class="reBodyMiddleFormMain">
+                    <form action="/upload" method="get">
+                        <p>isbn</p>
+                        <div class="registerText l">
+                            <div class="clear cl1"></div>
+                            <input class="in1" type="text" name="isbn"/>
+                        </div>
+                        <div class="huanhang l"></div>
+
+                        <p>书名</p>
+                        <div class="registerText l">
+                            <div class="clear cl1"></div>
+                            <input class="in1" type="text" name="title"/>
+                        </div>
+                        <div class="huanhang l"></div>
+
+                        <p>作者</p>
+                        <div class="registerText l">
+                            <div class="clear cl1"></div>
+                            <input class="in1" type="text" name="author"/>
+                        </div>
+                        <div class="huanhang l"></div>
+
+
+                        <p>出版社</p>
+                        <div class="registerText l">
+                            <div class="clear cl2"></div>
+                            <input class="in2" type="text" name="publish"/>
+                        </div>
+                        <div class="huanhang l"></div>
+
+
+                        <p>出版年份</p>
+                        <div class="registerText l">
+                            <div class="clear cl3"></div>
+                            <input class="in3" type="text" name="publishyear"/>
+                        </div>
+                        <div class="huanhang l"></div>
+
+                        <p>评分</p>
+                        <div class="registerText l">
+                            <div class="clear cl3"></div>
+                            <input class="in3" type="text" name="score"/>
+                        </div>
+                        <div class="huanhang l"></div>
+
+                        <p>价格</p>
+                        <div class="registerText l">
+                            <div class="clear cl3"></div>
+                            <input class="in3" type="text" name="price"/>
+                        </div>
+                        <div class="huanhang l"></div>
+
+                        <p>内容介绍</p>
+                        <div class="registerText l">
+                            <div class="clear cl3"></div>
+                            <input class="in3" type="text" name="desc"/>
+                        </div>
+                        <div class="huanhang l"></div>
+
+                        <p>类别</p>
+                        <div class="registerText l">
+                            <div class="clear cl3"></div>
+                            <input class="in3" type="text" name="kind"/>
+                        </div>
+                        <div class="huanhang l"></div>
+
+                        <p>标签</p>
+                        <div class="registerText l">
+                            <div class="clear cl3"></div>
+                            <input class="in3" type="text" name="tag"/>
+                        </div>
+                        <div class="huanhang l"></div>
+
+                        <p>网络图片url</p>
+                                                <div class="registerText l">
+                                                    <div class="clear cl3"></div>
+                                                    <input class="in3" type="text" name="img"/>
+                                                </div>
+                                                <div class="huanhang l"></div>
+
+                        <input class="confirmButton l" type="submit">
+                        <div class="huanhang l"></div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    function previewFile() {
+        var preview = document.querySelector('img');
+        var file = document.querySelector('input[type=file]').files[0];
+        var reader = new FileReader();
+
+        reader.onloadend = function () {
+            preview.src = reader.result;
+        }
+
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            preview.src = "";
+        }
+    }
+</script>
+
+
+</body>
+</html>

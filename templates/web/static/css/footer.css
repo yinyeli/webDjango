@@ -1,0 +1,31 @@
+#footer{
+        border-top: 0.8px solid rgb(235, 235, 235);
+        height: 160px;
+
+        color:rgb(140, 140, 140);
+        font-size: 12px;
+        font-family: "Microsoft YaHei";
+        text-align: center;
+
+        padding-top: 17px;
+        padding-bottom: 50px;
+    }
+
+    .footer_nav{
+        padding-top: 25px;
+        padding-bottom: 17px;
+
+    }
+    
+    .sep{
+        margin-left: 19px;
+        margin-right: 17px;
+
+    }
+
+    .footer_copyright{
+        padding-top: 10px;
+    }
+    .float_1{
+        text-decoration: none;
+    }

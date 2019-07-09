@@ -1,0 +1,158 @@
+    body{
+     	background-color: #f3f9f1;
+     }
+     #main{
+        position: relative;
+         padding-top:45px;
+         padding-bottom: 50px;
+         padding-left: 50px;
+         padding-right: 50px;
+     }
+
+	.shadow_box{
+        background-color: #00BBFF;
+		font-family: "Microsoft YaHei";
+		font-size: 12px;
+		/*position: relative;*/
+        position: relative;
+        width: 950px;
+		height: 710px;
+		/*margin-left: 284.6px;*/
+        /*margin-bottom: 100px;*/
+
+	}
+
+	.register_box{
+		background-clip: border-box;
+		position: relative;
+		background-color: white;
+	}
+
+	.head{
+		border-bottom:0.8px solid rgb(236, 238, 242);
+        height: 74px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 30px;
+        padding-right: 15px;
+	}
+
+	.title{
+		float: left;
+		font-size:18px;
+        margin-top: 34px;
+        margin-bottom: 22px;
+        color: rgb(100,100,100);
+	}
+
+	.more{
+		float: right;
+		line-height: 22px;
+		margin-top: 40px;
+	}
+
+
+	.body{
+		padding-top:45px;
+		padding-bottom: 25px;
+	}
+
+	.t{
+		color: rgb(100,100,100);
+		font-size: 14px;
+		padding-bottom: 30px;
+		padding-top: 25px;
+		padding-right:10px; 
+		width:338px;
+		text-align: right;
+        vertical-align: top;
+	}
+
+    .text{
+        border:0.8px solid rgb(230, 230, 230);
+        border-radius: 2px;
+        float:left;
+        font-size: 13.3333px;
+        height: 18px;
+        line-height: 18px;
+        margin-right: 10px;
+        padding-bottom: 9px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 9px;
+        width: 290px;
+    }
+
+    .clause{
+        padding-bottom: 35px;
+        padding-top: 4px;
+        color: rgb(61,61,61);
+        position: relative;
+        left: -20px;
+    }
+
+    #chb_agreement{
+        margin-top: -4px;
+        margin-right: 8px;
+        vertical-align: middle;
+        font-family: MS Shell Dlg \32;
+        font-size: 13.3333px;
+        border-style: inset;
+        margin-top: 2px;        
+    }
+
+    .float_1{
+        text-decoration: none;
+    }
+
+    #submitRejister{
+        display: inline-block;
+        background-color: #4a77d4; ;
+        border-width: 0px;
+        border-radius: 5px;
+        height: 44px;
+        width: 178px;
+        font-size: 20px;
+        color: white;
+        line-height: 44px;
+        margin-left: 50px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    #footer{
+        border-top: 0.8px solid rgb(235, 235, 235);
+        height: 160px;
+
+        color:rgb(140, 140, 140);
+        font-size: 12px;
+        font-family: "Microsoft YaHei";
+        text-align: center;
+
+        padding-top: 17px;
+        padding-bottom: 50px;
+    }
+
+    .footer_nav{
+        padding-top: 25px;
+        padding-bottom: 17px;
+
+    }
+
+    .sep{
+        margin-left: 19px;
+        margin-right: 17px;
+
+    }
+
+    .footer_copyright{
+        padding-top: 10px;
+    }
+
+    #registerbutton{
+        width:280px;
+        background: rgb(19, 22, 226);
+        font-size: 20px;
+        border:none;
+        color:#fff;
+    }

@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>登录</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 http://www.itbool.com" />
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static "css/登录.css" %}" />
+
+
+</head>
+    <body>
+    	<div id="main">
+    		<div id="login">  
+                <h1>修改密码</h1>
+                <form method="post" name="change" action="/change/" >
+                    {% csrf_token %}
+                    <input type="text" required="required" placeholder="账号" name="z" value=""></input>
+                    <input type="text" required="required" placeholder="原密码" name="u" value=""></input>
+                    <input type="password" required="required" placeholder="新密码" name="p" value=""></input>
+                    <input type="password" required="required" placeholder="请再次输入新密码" name="rp" value=""></input>
+                    <button class="but" type="submit">修改</button>
+                </form>
+                <p style="color: #dc0000">{{ change_false }}</p>
+            </div>  
+        </div>
+
+
+    </body>
+</html>

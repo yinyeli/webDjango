@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>荐书网注册</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    {% load static %}
+    <link href={% static "css/base.css" %} rel="stylesheet" type="text/css"/>
+    <link href={% static "css/register.css" %} rel="stylesheet" type="text/css"/>
+{#    <link href={% static "css/login.css." %} rel="stylesheet" type="text/css"/>#}
+
+</head>
+<body>
+<div id="register" class="t">
+    <div class="loginContent c">
+        <div class="loginContentLogo l">
+
+            <h1>荐书网</h1>
+        </div>
+        <div class="goLogin r">
+            <p>已有账号？<a href="/">立即登录</a>
+            <div class="em"></div>
+            </p>
+        </div>
+    </div>
+    <div class="BodyBg t l">
+
+        <div class="reBodyMiddle c">
+            <p style="color: #dc0000">{{ register_false }}</p>
+            <div class="reBodyMiddleForm l">
+                <form action="/register/" method="post">
+                    <div class="reBodyMiddleFormMain">
+
+                        <p>用户类型</p>
+                        <div class="registerText l">
+                            <div class="">
+                                <select id="account_kind" name="account_kind" style=" width: 298px;height: 30px;border: 1px solid #ccc;    text-indent: 20px;outline: none;">
+                                    <option value="1">消费者</option>
+                                    <option value="2">商家</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="huanhang l">
+                            <div class="errorIcon l"></div>
+                            <p class="tips">！</p>
+                        </div>
+
+                        <p>姓名</p>
+                        <div class="registerText l">
+                            <div class="clear cl1"></div>
+                            <input class="in1" type="text" name="txt_name"/>
+                        </div>
+
+                        <div class="huanhang l">
+                            <div class="errorIcon l"></div>
+                            <p class="tips">！</p>
+                        </div>
+                        <p>年龄</p>
+                        <div class="registerText l">
+                            <div class="clear cl2"></div>
+                            <input class="in2" type="text" name="txt_age"/>
+                        </div>
+
+                        <div class="huanhang l">
+                            <div class="errorIcon l"></div>
+                            <p class="tips"></p>
+                        </div>
+                        <p>性别</p>
+                        <div class="registerText l">
+                            <div class="">
+                                <select id="gender" name="txt_gender" style=" width: 298px;height: 30px;border: 1px solid #ccc;    text-indent: 20px;outline: none;">
+                                    <option value="1">男</option>
+                                    <option value="0">女</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="huanhang l">
+                            <div class="errorIcon l"></div>
+                            <p class="tips"></p>
+                        </div>
+                        <p>输入账号</p>
+                        <div class="registerText l">
+                            <div class="clear cl4"></div>
+                            <input class="in4" type="text" placeholder="6-16位大小写英文字母、数字或符号的组合" name="txt_username"/>
+                        </div>
+                        <div class="huanhang l">
+                            <div class="errorIcon l"></div>
+                            <p class="tips"></p>
+                        </div>
+                        <p>输入密码</p>
+                        <div class="registerText l">
+                            <div class="clear cl4"></div>
+                            <input class="in4" type="password" placeholder="输入密码" name="txt_password"/>
+                        </div>
+                        <div class="huanhang l">
+                            <div class="errorIcon l"></div>
+                            <p class="tips">密码格式不正确！</p>
+                        </div>
+                        <p>确认密码</p>
+                        <div class="registerText l">
+                            <div class="clear cl5"></div>
+                            <input class="in5" type="password" placeholder="请再次输入密码" name="txt_repassword"/>
+                        </div>
+                        <div class="huanhang l">
+                            <div class="errorIcon l"></div>
+                            <p class="tips">密码格式不正确！</p>
+                        </div>
+                        <input class="confirmButton l" type="submit" value="注册"/>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

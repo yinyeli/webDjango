@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+    <title>商品详情页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="荐书网 http://www.itbool.com"/>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/商品详情.css" %}"/>
+
+</head>
+<body>
+<div id="info-header">
+    <div id="logo"><a href="/home">DESIRE</a></div>
+    <div class="menu">
+        <ul id="header-user">
+            <li class="user-enroll">
+                <a class="float_1" href="/register">注册</a>
+            </li>
+            <li class="user">
+                <a class="float_1" href="/login">登录</a>
+            </li>
+
+            <li class="user">
+                <a class="float_1" href="/save">我的收藏</a>
+            </li>
+            <li class="user">
+                <a class="float_1" href="/shopping_cart">我的购物车</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="search">
+        <form method="get" target="_blank">
+            <input id="searchText">
+            <br>
+
+            <br>
+        </form>
+    </div>
+</div>
+
+
+<div id="info-main">
+    {% for book in books %}
+        <div id="info-lside">
+            <img src={{ book.img }} width="430" height="430"/>
+        </div>
+
+        <div id="info-rside">
+        <div id="rside-header">
+
+            <h1>{{ book.title }}</h1>
+            <li id="p1">编号:{{ book.isbn }}</li>
+            <li id="p1">作者：{{ book.author }}</li>
+            <li id="p1">评分：{{ book.score }}</li>
+            <li id="p1">描述:{{ book.description }}</li>
+
+
+        </div>
+
+        <div id="rside-price">
+            <dl id="price">
+                <dt class="dt-att" id="price2">
+                    价
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    格:
+                </dt>
+                <dd id="price-china">￥
+                    <span>{{ book.price }}</span>
+                </dd>
+            </dl>
+        </div>
+
+
+        <div id="rside-extra">
+            <div class="extra">
+                <dl>
+                    <dt>
+                        支
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        持：
+                    </dt>
+                    <dd>
+    						<span class="sp">
+    							<i class="icon-support"></i>花呗分期
+    						</span>
+                        <span class="sp">
+    						    <i class="icon-support"></i>百城速达
+    						</span>
+                        <span class="sp">
+    							<i class="icon-support"></i>顺丰包邮
+    						</span>
+                        <span class="sp">
+    							<i class="icon-support"></i>七天无理由退货
+    						</span>
+                    </dd>
+                </dl>
+            </div>
+            <br><br>
+            <p id="p2">服务：本产品由DESIRE负责发货并提供售后服务</p>
+        </div>
+
+
+        <div id="rside-info">
+            <dl>
+                <dt class="dt-att">
+                    <span>商品数量：</span>
+                </dt>
+                <dd>
+                    <form action="/buy" method="get">
+                    <div id="control-quantity">
+                        <input id="quantity" name="count_products" type="number" value="1" min="1">
+                    </div>
+
+                    <div id="buy-it">
+                        <a class="btn" href="">加入购物车</a>
+                        <input class="btn" type="submit" value="立即购买" />
+                    </div>
+                    <a class="favorite" href="">
+                        <i class="icon-favorite"></i>
+                        收藏
+                    </a>
+                        </form>
+                </dd>
+            </dl>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+
+
+</body>
+</html>
+

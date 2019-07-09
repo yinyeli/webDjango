@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>文具-DESIRE</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/header.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/搜索框.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/footer.css" %}">
+</head>
+<div id="info-header">
+    <div id="logo"><a href="/home">荐书网</a></div>
+    <div class="menu">
+        <ul id="header-user">
+            <li class="user">
+                <a class="float_1" href="/save" style="margin-right: 20px;">我的收藏</a>
+            </li>
+            <li class="user">
+                <a class="float_1" href="/shopping_cart">我的购物车</a>
+            </li>
+             <li class="user">
+                <a class="float_1" href="/order">订单</a>
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+<div class="home_nav_l_box"></div>
+</div>
+<div id="bd" dd_name="15331" name=15331>
+    <div class="con " name=15332>
+
+        <div class="spacer"></div>
+        <div id="12808" class="con cloth_good_sort clearfix" name=15334>
+            <div id="12810" class="col cloth_good_left" name=15336>
+                <div ddt-area=2942462 ddt-expose="on">
+                    <div id='component_2942462'></div>
+                    <div class="shoplist" id="cpc_top">
+                        <ul class="bigimg cloth_shoplist cloth_shoplist_gg">
+                            {% for bok in fenleis %}
+                                <li>
+                                    <a title={{ bok.title }} class="pic" href="/object2/?p2={{ bok.id }}"
+                                       target="_blank"><img src={{ bok.img }} alt={{ bok.title }} width="200"></a>
+                                    <p class="name">
+                                        <a title={{ bok.title }} href="" target="_blank">{{ bok.title }} </a>
+                                    </p>
+                                    <p class="price"><span class="price_n">&yen;{{ bok.price }}</span></p>
+                                    <p class="search_hot_word">{{ bok.tag }}</p>
+                                    <p class="star" style="display: block">
+                  <span class="level">
+                    <span style="width: 100%;"></span>
+                  </span>
+                                        <a href="" target="_blank">{{ bok.score }}</a>
+                                    </p>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</head>
+</html>
+        

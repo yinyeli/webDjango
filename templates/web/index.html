@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>店铺</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/index.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/public.css" %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static "css/mygxin.css" %}"/>
+</head>
+<body>
+<header></header>
+<section class="mains">
+    <div id="logo"><a href="/mygxin">荐书网</a></div>
+</section>
+
+<section class="mains">
+    <div class="title-modules">
+        <span class="titles org"></span>
+        <a class="mores"></a>
+    </div>
+    <div class="recommend-list">
+        <div class="flex-box">
+            <a class="items">
+                {% for book in liebiaos %}
+                    <div style="float: left;margin-left: 20px;">
+                        <img src={{ book.img }} width="230" height="250">
+                        <p class="dre-procet">Title:《{{ book.title }}》</p>
+                        <p class="dre-procet" style="color: red;">价格:{{ book.price }}</p>
+                        <br>
+                    </div>
+                {% endfor %}
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<section class="mains">
+    <div class="title-modules">
+        <span class="titles blue">新书上传</span>
+    </div>
+    <div class="news-list">
+        <a class="items">
+            <a title="e111" class="img" href="/upload"><img src="\static\img\dp_26.png"></a>
+            <div class="infos">
+                <div class="decs">点此上传图书信息</div>
+
+            </div>
+
+        </a>
+
+    </div>
+</section>
+
+</body>
+
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/css.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/header.css" %}">
+</head>
+<body>
+<div class="all">
+    <div class="header">
+
+        <ul>
+            <li class="li"><a href="/order">订单</a></li>
+            <li class="li"><a href="/shopping_cart">购物车</a></li>
+            <li><a href="/save">我的收藏</a></li>
+            <li><a href="/personal">个人中心</a></li>
+        </ul>
+    </div>
+    <div id="logo"><a href="/home">荐书网</a></div>
+    <div class="content">
+
+
+    </div>
+    <div class="content-head">
+        <ul>
+            <li><a href="/search">小说</a></li>
+            <span>|</span>
+            <li><a href="">青春</a></li>
+            <span>|</span>
+            <li><a href="">历史</a></li>
+            <span>|</span>
+            <li><a href="">保健</a></li>
+            <span>|</span>
+            <li><a href="">少儿</a></li>
+            <span>|</span>
+            <li><a href="">旅游</a></li>
+            <span>|</span>
+            <li><a href="">期刊</a></li>
+            <span>|</span>
+            <li style="width: 70px"><a href="">图书畅游榜</a></li>
+            <span>|</span>
+            <li style="width: 70px"><a href="">新书热卖榜</a></li>
+            <span>|</span>
+            <li><a href="">特价书</a></li>
+            <span>|</span>
+            <li style="width: 70px"><a href="">图书促销</a></li>
+            <span>|</span>
+            <li style="width: 70px"><a href="">所有图书类</a></li>
+        </ul>
+    </div>
+    <div class="content-end">
+        <input style="margin-left: 70px;" type="text" name="">
+        <input type="button" value="在图书中搜索">
+        <ul>
+            <li class="best"><a href="">高级搜索</a></li>
+            <span>|</span>
+            <li class="think" style="width: 100px;"><a href="">雅思</a></li>
+            <span>|</span>
+            <li><a href="">建造师</a></li>
+            <span>|</span>
+            <li><a href="">中里巴人</a></li>
+            <span>|</span>
+            <li><a href="">注会</a></li>
+            <span>|</span>
+            <li style="width: 70px"><a href="">新概念英语</a></li>
+            <span>|</span>
+            <li><a href="">更多>></a></li>
+        </ul>
+    </div>
+    <div class="bothbody">
+
+        <div class="leftbody">
+            <dl class="excel">
+                <dt><a href="">推荐分类</a></dt>
+                <dd style="width: 50px;"><a href="">外语</a></dd>
+                <span>|</span>
+                <dd><a href="">中小学教辅</a></dd>
+                <span>|</span>
+            </dl>
+            <div id="left">
+                <dl class="longexcel">
+                    <p><a href="">图书商品分类</a></p>
+                    <dt><a href="/search">[小说]</a></dt>
+                    <dd><a href="">悬疑</a></dd>
+                    <span>|</span>
+                    <dd><a href="">言情</a></dd>
+                    <span>|</span>
+                    <dd><a href="">职场</a></dd>
+                    <span>|</span>
+                    <dd><a href="">财经</a></dd>
+                </dl>
+                <dl class="longexcel">
+
+                    <dt><a href="">[文艺]</a></dt>
+                    <dd><a href="">文学</a></dd>
+                    <span>|</span>
+                    <dd><a href="">传记</a></dd>
+                    <span>|</span>
+                    <dd><a href="">艺术</a></dd>
+                    <span>|</span>
+                    <dd><a href="">摄影</a></dd>
+                </dl>
+                <dl class="longexcel">
+
+                    <dt><a href="">青春</a></dt>
+                    <dd><a href="">青春文学</a></dd>
+                    <span>|</span>
+                    <dd><a href="">动漫</a></dd>
+                    <span>|</span>
+                    <dd><a href="">幽默</a></dd>
+                </dl>
+                <dl class="longexcel">
+
+                    <dt><a href="">[励志/成功]</a></dt>
+                    <dd><a href="">修养</a></dd>
+                    <span>|</span>
+                    <dd><a href="">成功</a></dd>
+                    <span>|</span>
+                    <dd><a href="">职场</a></dd>
+                    <span>|</span>
+                    <dd><a href="">沟通</a></dd>
+                </dl>
+                <dl class="longexcel">
+
+                    <dt><a href="">[少儿]</a></dt>
+
+
+                    <dd><a href="">文学</a></dd>
+                    <span>|</span>
+                    <dd><a href="">科普</a></dd>
+                    <span>|</span>
+                    <dd><a href="">图画书</a></dd>
+                </dl>
+                <dl class="longexcel">
+
+                    <dt><a href="">[生活]</a></dt>
+
+                    <dd><a href="">保健</a></dd>
+                    <span>|</span>
+                    <dd><a href="">家教</a></dd>
+                    <span>|</span>
+                    <dd><a href="">美丽装扮</a></dd>
+                    <span>|</span>
+                    <dd><a href="">育儿</a></dd>
+                    <span>|</span>
+                    <dd><a href="">美食</a></dd>
+                    <span>|</span>
+                    <dd><a href="">旅游</a></dd>
+                    <span>|</span>
+                    <dd><a href="">收藏</a></dd>
+                    <span>|</span>
+                    <dd><a href="">体地个人理财</a></dd>
+                </dl>
+                <dl class="longexcel">
+
+                    <dt><a href="">[个人社会]</a></dt>
+                    <dd><a href="">文历哲学</a></dd>
+                    <span>|</span>
+                    <dd><a href="">宗教政治</a></dd>
+                    <span>|</span>
+                    <dd><a href="">历史</a></dd>
+                    <span>|</span>
+                    <dd><a href="">法经</a></dd>
+                    <span>|</span>
+                    <dd><a href="">社会学</a></dd>
+                    <span>|</span>
+                    <dd><a href="">心理学</a></dd>
+                </dl>
+                <dl class="longexcel">
+
+                    <dt><a href="">[管理]</a></dt>
+                    <dd><a href="">科普</a></dd>
+                    <span>|</span>
+                    <dd><a href="">建筑</a></dd>
+                    <span>|</span>
+                    <dd><a href="">医学</a></dd>
+                    <span>|</span>
+                    <dd><a href="">计算机</a></dd>
+                    <span>|</span>
+                    <dd><a href="">农业</a></dd>
+                    <span>|</span>
+                    <dd><a href="">自然科学</a></dd>
+                    <span>|</span>
+                    <dd><a href="">工业</a></dd>
+                    <span>|</span>
+                    <dd><a href="">通信</a></dd>
+                </dl>
+                <dl class="longexcel">
+
+                    <dt><a href="">[教育]</a></dt>
+                    <dd><a href="">教材</a></dd>
+                    <span>|</span>
+                    <dd><a href="">中小学教辅</a></dd>
+                    <span>|</span>
+                    <dd><a href="">外语</a></dd>
+                </dl>
+                <dl class="longexcel">
+
+                    <dt><a href="">[工具书]</a></dt>
+                    <dt><a href="">[图外原版书]</a></dt>
+                    <dt><a href="">[期刊]</a></dt>
+
+                </dl>
+            </div>
+        </div>
+        <div class="body">
+            <img class="log" src="\static\img\dd_scroll_top.gif">
+            <div class="bodytop">
+                <img class="imgleft" src="\static\img\1.jpg">
+                <ul class="bodyul">
+                    <li class="aa">1</li>
+                    <li class="aa">2</li>
+                </ul>
+            </div>
+            <div class="bodycenter">
+                <ul class="bodylist">
+                    <p>最新上架</p>
+
+                </ul>
+                <div name="ww" class="changeone">
+                    <div class="pagone"><a href="">
+                        <img src="\static\img\dd_culture_3.jpg">
+                        <ul>
+                            <p>《嘿，我知道你》</p>
+                            <li>作者：兰海&nbsp;著</li>
+                            <li>出版社：中国妇女出版社</li>
+                            <li>出版时间：2009年10月</li>
+                            <li>定价￥28.00</li>
+                            <li>当当价：￥17.00</li>
+                        </ul>
+                    </a></div>
+
+                    <div class="pagtwo"><a href="">
+                        <img src="\static\img\dd_culture_1.jpg">
+                        <ul>
+                            <p>《中国时代》</p>
+                            <li>作者：师永刚，邹明&nbsp;主编</li>
+                            <li>出版社：作家出版社</li>
+                            <li>出版时间：2009年10月</li>
+                            <li>定价￥39.00</li>
+                            <li>当当价：￥27.00</li>
+                        </ul>
+                    </a></div>
+
+                    <div class="pagthree"><a href="">
+                        <img src="\static\img\dd_culture_2.jpg">
+                        <ul>
+                            <p>《中国时代》</p>
+                            <li>作者：师永刚，邹明&nbsp;主编</li>
+                            <li>出版社：作家出版社</li>
+                            <li>出版时间：2009年10月</li>
+                            <li>定价￥39.00</li>
+                            <li>当当价：￥27.00</li>
+                        </ul>
+                    </a></div>
+
+                    <div class="pagfour"><a href="">
+                        <img src="\static\img\dd_culture_4.jpg">
+                        <ul>
+                            <p>《中国时代》</p>
+                            <li>作者：师永刚，邹明&nbsp;主编</li>
+                            <li>出版社：作家出版社</li>
+                            <li>出版时间：2009年10月</li>
+                            <li>定价￥39.00</li>
+                            <li>当当价：￥27.00</li>
+                        </ul>
+                    </a></div>
+                </div>
+
+
+                <div name="ww" class="changefour">
+                    <div class="pagxa"><a href="">
+                        <img src="\static\img\dd_focus_8.jpg">
+                        <ul>
+
+                        </ul>
+                    </a></div>
+
+                    <div class="pagxb"><a href="">
+                        <img src="\static\img\dd_focus_7.jpg">
+                        <ul>
+
+                        </ul>
+                    </a></div>
+
+                    <div class="pagxc"><a href="">
+                        <img src="\static\img\dd_focus_4.jpg">
+                        <ul>
+
+                        </ul>
+                    </a></div>
+
+                    <div class="pagxd"><a href="">
+                        <img src="\static\img\dd_focus_3.jpg">
+                        <ul>
+
+                        </ul>
+                    </a></div>
+                </div>
+                <div class="centerend">
+                    <p>重点关注</p>
+                    <ul class="end"><a href="">
+                        <img src="\static\img\dd_focus_1.jpg">
+                        <span href=""></span>
+                        <li>定价：￥49.00</li>
+                        <li>当当价：￥32.00</li>
+                    </a></ul>
+                    <ul class="end"><a href="">
+                        <img src="\static\img\dd_focus_2.jpg">
+                        <span href=""></span>
+                        <li>定价：￥49.00</li>
+                        <li>当当价：￥32.00</li>
+                    </a></ul>
+                    <ul class="end"><a href="">
+                        <img src="\static\img\dd_focus_3.jpg">
+                        <span href=""></span>
+                        <li>定价：￥49.00</li>
+                        <li>当当价：￥32.00</li>
+                    </a></ul>
+                    <ul class="end"><a href="">
+                        <img src="\static\img\dd_focus_4.jpg">
+                        <span href=""></span>
+                        <li>定价：￥49.00</li>
+                        <li>当当价：￥32.00</li>
+                    </a></ul>
+                    <ul class="end"><a href="">
+                        <img src="\static\img\dd_focus_5.jpg">
+                        <span href=""></span>
+                        <li>定价：￥49.00</li>
+                        <li>当当价：￥32.00</li>
+                    </a></ul>
+                    <ul class="end"><a href="">
+                        <img src="\static\img\dd_focus_6.jpg">
+                        <span href=""></span>
+                        <li>定价：￥49.00</li>
+                        <li>当当价：￥32.00</li>
+                    </a></ul>
+                    <ul class="end"><a href="">
+                        <img src="\static\img\dd_focus_7.jpg">
+                        <span href=""></span>
+                        <li>定价：￥49.00</li>
+                        <li>当当价：￥32.00</li>
+                    </a></ul>
+                    <ul class="end"><a href="">
+                        <img src="\static\img\dd_focus_8.jpg">
+                        <span href=""></span>
+                        <li>定价：￥49.00</li>
+                        <li>当当价：￥32.00</li>
+                    </a></ul>
+                </div>
+            </div>
+        </div>
+        <div class="rightbody">
+            <div class="righttop">
+                <p>快讯快递</p>
+                <ul id="yushu">
+                    <div class="shiying">
+                        {% for name in books %}
+
+                            <li><a href="/xq/?p1={{ name.id }}">{{ name.id }}{{ name.title }}</a></li>
+                            <br>
+                        {% endfor %}
+                    </div>
+                </ul>
+
+            </div>
+            <div class="rightdown">
+                <p>近七日畅销榜</p>
+                <ul>
+                    <li style="margin-left: 18px">动漫</li>
+                    <li>小说</li>
+                    <li>外语</li>
+                    <li>旅游</li>
+                    <li>励志</li>
+                </ul>
+                <div class="rightcontent">
+                    <span><img src="\static\img\dd_seven_hearten_01.jpg"></span>
+                    <dl><a href="">
+                        <dt>不抱怨的世界</dt>
+                        <dd>作者：（美）鲍文</dd>
+                        <dd>出版社：陕西师范</dd>
+                        <dd>出版时间：2009年4</dd>
+                    </a></dl>
+
+                    <span><img src="\static\img\dd_seven_hearten_02.jpg"></span>
+                    <dl><a href="">
+                        <dt>不抱怨的世界</dt>
+                        <dd>作者：（美）鲍文</dd>
+                        <dd>出版社：陕西师范</dd>
+                        <dd>出版时间：2009年4</dd>
+                    </a></dl>
+                    <span><img src="\static\img\dd_seven_hearten_03.jpg"></span>
+                    <dl><a href="">
+                        <dt>不抱怨的世界</dt>
+                        <dd>作者：（美）鲍文</dd>
+                        <dd>出版社：陕西师范</dd>
+                        <dd>出版时间：2009年4</dd>
+                    </a></dl>
+                    <div style="clear: both;"></div>
+                    <div class="num qq"><a href="">高效能人士的七个习惯</a></div>
+                    <div class="num rr"><a href="">高效能人士的七个习惯</a></div>
+                    <div class="num tt"><a href="">高效能人士的七个习惯</a></div>
+                    <div class="num yy"><a href="">高效能人士的七个习惯</a></div>
+                    <div class="num pp"><a href="">高效能人士的七个习惯</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="finally">
+
+    </ul>
+
+</div>
+</body>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js.js"></script>
+</html>

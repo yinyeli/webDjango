@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>登录</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    {% load static %}
+<link href="{% static "css/登录.css" %}" rel="stylesheet" type="text/css" />
+
+</head>
+    <body>
+    	<div id="main">
+    		<div id="login">  
+                <h1>Please Login</h1>
+                <form action="/login/" method="post">
+                    <input type="text" required="required" placeholder="用户名" name="username"></input>
+                    <input type="password" required="required" placeholder="密码" name="password"></input>
+                    <button class="but" type="submit">登录</button>
+                    <div>
+                    <a href="/register" STYLE="float:left">注册</a>
+                        <a style="font-size: 10px;color: #dc0000; padding-left: 20px">{{ login_false }}</a>
+                    <a href="/change" STYLE="float:right">修改密码?</a>
+                    </div>
+                </form>  
+            </div>  
+        </div>
+
+    </body>
+</html>
