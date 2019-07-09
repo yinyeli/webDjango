@@ -87,8 +87,6 @@ def change(request):
 
 
 #商家
-def index(request):
-    return render(request, 'web/index.html')
 def mygxin(request):
     return render(request, 'web/mygxin.html')
 def myorderq(request):
