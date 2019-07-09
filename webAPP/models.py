@@ -31,11 +31,11 @@ class BookInfo(models.Model):
 # 订单信息
 class Orders(models.Model):
     time = models.CharField(max_length=256) # 时间
-    buyer = models.IntegerField() # 买方用户id
-    seller = models.IntegerField() # 卖方用户id
-    book_id = models.IntegerField()# book id
-    count_product = models.IntegerField()# 商品数量
-    money = models.FloatField() # 总价
+    buyer = models.CharField(max_length=256) # 买方用户id
+    seller = models.CharField(max_length=256) # 卖方用户id
+    book_id = models.CharField(max_length=256)# book id
+    count_product = models.CharField(max_length=256)# 商品数量
+    money = models.CharField(max_length=256) # 总价
 
 # 店铺信息
 class Store(models.Model):

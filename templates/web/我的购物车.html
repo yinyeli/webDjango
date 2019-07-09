@@ -66,104 +66,59 @@
         <div class="fn-shop">
             <div class="shopping_list">
                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                    <tbody data-stock="270" data-offline="false" data-productid="23629403"
-                           data-timestamp="1497078258000" data-orderforspupormo="0">
-                    <tr id="tr_503188625" class="bb_none tree_first">
-                        <td class="row1">
-                            <input type="checkbox" onclick="check_all_click(this)" id="Check_All_Up"/>
-                        </td>
-                        <td class="row_img">
-                            <a href="" target="_blank" dd_name="查看详情">
-                                <img src="\static\img\18.jpg" height="80" width="80">
-                            </a>
-                        </td>
-                        <td class="row_name">
-                            <div class="name">
-                                <a href="" title="维他奶 原味豆奶250ml*16盒/箱" target="_blank" dd_name="查看详情"
-                                   style="word-break:break-all;word-wrap:break-word;">维他奶 原味豆奶250ml*16盒/箱
+                    {% for info in objectinfos %}
+                        <tbody data-stock="270" data-offline="false" data-productid="23629403"
+                               data-timestamp="1497078258000" data-orderforspupormo="0">
+                        <tr id="tr_503188625" class="bb_none tree_first">
+                            <td class="row1">
+                                <input type="checkbox" onclick="check_all_click(this)" id="Check_All_Up"/>
+                            </td>
+                            <td class="row_img">
+                                <a href="" target="_blank" dd_name="查看详情">
+                                    <img src="{{ info.img }}" height="80" width="80">
                                 </a>
-                            </div>
-                        </td>
-                        <td class="row3">
-                            <span class="price_n">￥36.80</span>
-                        </td>
-                        <td class="fn-count-trip row3" data-minbuy="0">
+                            </td>
+                            <td class="row_name">
+                                <div class="name">
+                                    <a href="" title="{{ info.title }}" target="_blank" dd_name="查看详情"
+                                       style="word-break:break-all;word-wrap:break-word;">{{ info.title }}
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="row3">
+                                <span class="price_n">￥{{ info.price }}</span>
+                            </td>
+                            <td class="fn-count-trip row3" data-minbuy="0">
                       <span class="amount fn-uodatecount" data-value="1">
-                        <a href="" dd_name="减少数量">-</a>
-                        <input data-value="1" value="1" type="text">
-                        <a href="" dd_name="增加数量">+</a>
+                        {{ object_quantity }}
                       </span>
-                        </td>
-                        <td class="row4">
-                            <span class="red">￥36.80</span>
-                        </td>
-                        <td class="row5">
+                            </td>
+                            <td class="row4">
+                                <span class="red">￥{{ object_prices }}</span>
+                            </td>
+                            <td class="row5">
                         <span>
                             <a class="fn-add-wish" href="" data-item="503188625" dd_name="加入收藏按钮">移入收藏</a>
                         </span>
-                            <span>
-                            <a class="fn-remove-product" href="" data-item="503188625" dd_name"删除普通品">删除</a>
-                        </span>
-                            <span>
-                            <a class="fn-object-xq" href="/objectxq" data-item="503188625" dd_name="商品详情">商品详情</a>
-                        </span>
-                        </td>
-                    </tr>
-                    </tbody>
-                    <tbody data-stock="123" data-offline="false" data-productid="23931425"
-                           data-timestamp="1497078073000" data-orderforspupormo="0">
-                    <tr id="tr_503187654" class="bb_none">
-                        <td class="row1">
-                            <input type="checkbox" onclick="check_all_click(this)" id="Check_All_Up"/>
-                        </td>
-                        <td class="row_img">
-                            <a href="" target="_blank" dd_name="查看详情">
-                                <img src="\static\img\12.jpg" height="80" width="80">
-                            </a>
-                        </td>
-                        <td class="row_name">
-                            <div class="name">
-                                <a href="" title="Midea/美的 BCD-320WTZV(E)风冷无霜智能保鲜节能OS" target="_blank" dd_name="查看详情"
-                                   style="word-break:break-all;word-wrap:break-word;">Midea/美的
-                                    BCD-320WTZV(E)风冷无霜智能保鲜节能OS
-                                </a>
-                            </div>
-                        </td>
-                        <td class="row3">
-                            <span class="price_n">￥3499.00</span>
-                        </td>
-                        <td class="fn-count-trip row3" data-minbuy="0">
-                      <span class="amount fn-uodatecount" data-value="1">
-                        <a href="" dd_name="减少数量">-</a>
-                        <input data-value="1" value="1" type="text">
-                        <a href="" dd_name="增加数量">+</a>
-                      </span>
-                        </td>
-                        <td class="row4">
-                            <span class="red">￥3499.00</span>
-                        </td>
-                        <td class="row5">
-                        <span>
-                            <a class="fn-add-wish" href="" data-item="503188625" dd_name="加入收藏按钮">移入收藏</a>
-                        </span>
-                            <span>
+                                <span>
                             <a class="fn-remove-product" href="" data-item="503188625" dd_name="删除普通品">删除</a>
                         </span>
-                            <span>
+                                <span>
                             <a class="fn-object-xq" href="/objectxq" data-item="503188625" dd_name="商品详情">商品详情</a>
                         </span>
-                        </td>
-                    </tr>
-                    </tbody>
-                    <tfoot>
-                    <tr class="total">
-                        <td class="row1"></td>
-                        <td class="row_img">合计</td>
-                        <td class="row4" colspan="3">
-                            <span class="red big ooline alignright">￥3535.8</span>
-                        </td>
-                    </tr>
-                    </tfoot>
+                            </td>
+                        </tr>
+
+                        <tfoot>
+                        <tr class="total">
+                            <td class="row1"></td>
+                            <td class="row_img">合计</td>
+                            <td class="row4" colspan="3">
+                                <span class="red big ooline alignright">￥{{ object_prices }}</span>
+                            </td>
+                        </tr>
+                        </tfoot>
+                    {% endfor %}
                 </table>
             </div>
         </div>
@@ -174,13 +129,8 @@
 <div style="position:static;bottom:-20px;z-index: 101;width:100%;left:0px;">
     <div class="shopping_total" id="J_totalMoneyBlock">
         <div class="shopping_total_right">
-            <a class="total_btn fn-checkout" href="/writeorder" id="checkout_btn" dd_name="结算">结&nbsp;&nbsp;算</a>
-            <div class="subtotal">
-                <p>
-                    <span class="cartsum">总计(不含运费)：</span>
-                    <span id="payAmount" class="price">￥3535.8</span>
-                </p>
-            </div>
+            <a class="total_btn fn-checkout" href="/write/?p8={{ object_prices }}&p7={{ info.id }}" id="checkout_btn" dd_name="结算">结&nbsp;&nbsp;算</a>
+
         </div>
 
     </div>

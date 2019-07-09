@@ -2076,3 +2076,574 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLR
 2019-07-09 14:26:29,149 [Thread-286:7220] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_06.gif HTTP/1.1" 404 1708
 2019-07-09 14:26:29,151 [Thread-287:11540] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_07.gif HTTP/1.1" 404 1708
 2019-07-09 14:26:29,151 [Thread-288:1812] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_08.gif HTTP/1.1" 404 1708
+2019-07-09 14:27:36,514 [Thread-289:4352] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo" WHERE "webAPP_bookinfo"."id" = 8; args=(8,)
+2019-07-09 14:27:36,517 [Thread-289:4352] [django.server:124] [basehttp:log_message] [INFO]- "GET /xq/?p1=8 HTTP/1.1" 200 3757
+2019-07-09 14:27:36,558 [Thread-290:7780] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/icon.png HTTP/1.1" 404 1669
+2019-07-09 14:27:38,686 [Thread-291:13188] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo"  LIMIT 5 OFFSET 5; args=()
+2019-07-09 14:27:38,688 [Thread-291:13188] [django.server:124] [basehttp:log_message] [INFO]- "GET /home/ HTTP/1.1" 200 17074
+2019-07-09 14:27:38,748 [Thread-292:3588] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'up_img'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'login/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'mygxin/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'myorderq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'xq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'object2/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'upload/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'change/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'buy/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'index/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'save/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'shopping_cart/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'order/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'writeorder/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'search/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'orderxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'objectxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'personal/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'home/jquery-3.1.1.min.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-07-09 14:27:38,757 [Thread-293:4128] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'up_img'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'login/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'mygxin/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'myorderq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'xq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'object2/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'upload/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'change/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'buy/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'index/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'save/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'shopping_cart/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'order/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'writeorder/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'search/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'orderxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'objectxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'personal/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'home/js.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-07-09 14:27:38,773 [Thread-292:3588] [django.server:124] [basehttp:log_message] [WARNING]- "GET /home/jquery-3.1.1.min.js HTTP/1.1" 404 5399
+2019-07-09 14:27:38,774 [Thread-295:8812] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_header_search_top.jpg HTTP/1.1" 404 1729
+2019-07-09 14:27:38,778 [Thread-294:7032] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_logo.gif HTTP/1.1" 404 1690
+2019-07-09 14:27:38,784 [Thread-297:11008] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_bg.jpg HTTP/1.1" 404 1699
+2019-07-09 14:27:38,784 [Thread-296:8332] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_cate_icon.gif HTTP/1.1" 404 1720
+2019-07-09 14:27:38,792 [Thread-293:4128] [django.server:124] [basehttp:log_message] [WARNING]- "GET /home/js.js HTTP/1.1" 404 5357
+2019-07-09 14:27:38,817 [Thread-298:2740] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_seven_bg1.jpg HTTP/1.1" 404 1705
+2019-07-09 14:27:38,835 [Thread-299:11504] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_01.gif HTTP/1.1" 404 1708
+2019-07-09 14:27:38,845 [Thread-300:11788] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_04.gif HTTP/1.1" 404 1708
+2019-07-09 14:27:38,846 [Thread-301:13036] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_05.gif HTTP/1.1" 404 1708
+2019-07-09 14:27:38,854 [Thread-302:4772] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_06.gif HTTP/1.1" 404 1708
+2019-07-09 14:27:38,866 [Thread-303:7480] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_07.gif HTTP/1.1" 404 1708
+2019-07-09 14:27:38,870 [Thread-304:10488] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_08.gif HTTP/1.1" 404 1708
+2019-07-09 14:27:40,387 [Thread-306:2720] [django.server:124] [basehttp:log_message] [INFO]- "GET /order/ HTTP/1.1" 200 10195
+2019-07-09 14:27:42,274 [Thread-305:6252] [django.server:124] [basehttp:log_message] [INFO]- "GET /shopping_cart/ HTTP/1.1" 200 9936
+2019-07-09 14:27:42,384 [Thread-307:10668] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/shopping_total.png HTTP/1.1" 404 1699
+2019-07-09 14:27:42,392 [Thread-308:8668] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/pop_del_bg.png HTTP/1.1" 404 1687
+2019-07-09 14:27:44,334 [Thread-310:12688] [django.server:124] [basehttp:log_message] [INFO]- "GET /save/ HTTP/1.1" 200 8384
+2019-07-09 14:27:44,408 [Thread-309:13056] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'up_img'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'login/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'mygxin/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'myorderq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'xq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'object2/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'upload/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'change/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'buy/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'index/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'save/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'shopping_cart/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'order/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'writeorder/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'search/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'orderxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'objectxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'personal/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'save/..images/loading_pop.gif'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-07-09 14:27:44,419 [Thread-309:13056] [django.server:124] [basehttp:log_message] [WARNING]- "GET /save/..images/loading_pop.gif HTTP/1.1" 404 5414
+2019-07-09 14:27:44,438 [Thread-311:7092] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/bg_tab_favorites.gif HTTP/1.1" 404 1705
+2019-07-09 14:27:44,450 [Thread-313:3116] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/bg_myfavo.png HTTP/1.1" 404 1684
+2019-07-09 14:27:44,453 [Thread-312:1036] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/bg_title_favorites.gif HTTP/1.1" 404 1711
+2019-07-09 14:27:46,710 [Thread-314:10380] [django.server:124] [basehttp:log_message] [INFO]- "GET /order/ HTTP/1.1" 200 10195
+2019-07-09 14:27:48,925 [Thread-315:11544] [django.server:124] [basehttp:log_message] [INFO]- "GET /shopping_cart/ HTTP/1.1" 200 9936
+2019-07-09 14:27:48,996 [Thread-316:10428] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/shopping_total.png HTTP/1.1" 404 1699
+2019-07-09 14:27:49,006 [Thread-317:12952] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/pop_del_bg.png HTTP/1.1" 404 1687
+2019-07-09 14:41:14,606 [Dummy-1:13024] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-07-09 14:41:14,610 [Dummy-1:13024] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-07-09 14:41:17,350 [Thread-2:7068] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'login_false' in template 'web/µÇÂ¼.html'.
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'login_false'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'login_false'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'login_false'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [login_false] in [{'True': True, 'False': False, 'None': None}, {'request': <WSGIRequest: GET '/'>}]
+2019-07-09 14:41:17,445 [Thread-2:7068] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 1172
+2019-07-09 14:43:46,612 [Thread-4:13008] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT "webAPP_user"."id", "webAPP_user"."username", "webAPP_user"."password", "webAPP_user"."permission", "webAPP_user"."name", "webAPP_user"."age", "webAPP_user"."gender" FROM "webAPP_user" WHERE "webAPP_user"."username" = 'yyl'; args=('yyl',)
+2019-07-09 14:43:46,618 [Thread-4:13008] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-07-09 06:43:46.613817' AND "django_session"."session_key" = 'zoik3uurk52vhvg65mal9tb01ms7v1mb'); args=('2019-07-09 06:43:46.613817', 'zoik3uurk52vhvg65mal9tb01ms7v1mb')
+2019-07-09 14:43:46,621 [Thread-4:13008] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-07-09 14:43:46,624 [Thread-4:13008] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) UPDATE "django_session" SET "session_data" = 'ODNkNTBmY2YxNGI0ZGJkODRjZDdkYTVjMTZjOTdmNjljOGZmYThkOTp7ImxvZ2luX2lkIjoxfQ==', "expire_date" = '2019-07-23 06:43:46.621885' WHERE "django_session"."session_key" = 'zoik3uurk52vhvg65mal9tb01ms7v1mb'; args=('ODNkNTBmY2YxNGI0ZGJkODRjZDdkYTVjMTZjOTdmNjljOGZmYThkOTp7ImxvZ2luX2lkIjoxfQ==', '2019-07-23 06:43:46.621885', 'zoik3uurk52vhvg65mal9tb01ms7v1mb')
+2019-07-09 14:43:46,640 [Thread-4:13008] [django.server:124] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 302 0
+2019-07-09 14:43:46,661 [Thread-5:10860] [django.server:124] [basehttp:log_message] [INFO]- "GET /mygxin/ HTTP/1.1" 200 3110
+2019-07-09 14:44:00,104 [Thread-7:9596] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo"  LIMIT 5 OFFSET 99; args=()
+2019-07-09 14:44:00,119 [Thread-7:9596] [django.server:124] [basehttp:log_message] [INFO]- "GET /home/ HTTP/1.1" 200 17092
+2019-07-09 14:44:00,187 [Thread-6:7244] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'up_img'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'login/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'mygxin/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'myorderq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'xq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'object2/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'upload/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'change/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'buy/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'index/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'save/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'shopping_cart/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'order/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'writeorder/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'search/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'orderxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'objectxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'personal/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'home/jquery-3.1.1.min.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-07-09 14:44:00,213 [Thread-8:2068] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'up_img'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'login/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'mygxin/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'myorderq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'xq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'object2/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'upload/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'change/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'buy/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'index/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'save/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'shopping_cart/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'order/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'writeorder/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'search/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'orderxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'objectxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'personal/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'home/js.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-07-09 14:44:00,235 [Thread-9:9568] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_cate_icon.gif HTTP/1.1" 404 1720
+2019-07-09 14:44:00,235 [Thread-10:944] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_header_search_top.jpg HTTP/1.1" 404 1729
+2019-07-09 14:44:00,241 [Thread-11:10588] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_logo.gif HTTP/1.1" 404 1690
+2019-07-09 14:44:00,246 [Thread-12:8324] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_bg.jpg HTTP/1.1" 404 1699
+2019-07-09 14:44:00,284 [Thread-6:7244] [django.server:124] [basehttp:log_message] [WARNING]- "GET /home/jquery-3.1.1.min.js HTTP/1.1" 404 5399
+2019-07-09 14:44:00,289 [Thread-8:2068] [django.server:124] [basehttp:log_message] [WARNING]- "GET /home/js.js HTTP/1.1" 404 5357
+2019-07-09 14:44:00,310 [Thread-13:1824] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_seven_bg1.jpg HTTP/1.1" 404 1705
+2019-07-09 14:44:00,325 [Thread-14:1572] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_01.gif HTTP/1.1" 404 1708
+2019-07-09 14:44:00,327 [Thread-15:12604] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_04.gif HTTP/1.1" 404 1708
+2019-07-09 14:44:00,339 [Thread-16:6500] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_05.gif HTTP/1.1" 404 1708
+2019-07-09 14:44:00,349 [Thread-17:3048] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_06.gif HTTP/1.1" 404 1708
+2019-07-09 14:44:00,354 [Thread-18:2168] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_07.gif HTTP/1.1" 404 1708
+2019-07-09 14:44:00,355 [Thread-19:11968] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_08.gif HTTP/1.1" 404 1708
+2019-07-09 14:46:43,408 [Thread-20:10232] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo" WHERE "webAPP_bookinfo"."id" = 100; args=(100,)
+2019-07-09 14:46:43,410 [Thread-20:10232] [django.server:124] [basehttp:log_message] [INFO]- "GET /xq/?p1=100 HTTP/1.1" 200 3740
+2019-07-09 14:46:43,448 [Thread-21:4664] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/icon.png HTTP/1.1" 404 1669
+2019-07-09 14:46:54,712 [Thread-22:12040] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo" WHERE "webAPP_bookinfo"."id" = 100; args=(100,)
+2019-07-09 14:46:54,714 [Thread-22:12040] [django.server:124] [basehttp:log_message] [INFO]- "GET /xq/?p1=100 HTTP/1.1" 200 3740
+2019-07-09 14:46:54,754 [Thread-23:13184] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/icon.png HTTP/1.1" 404 1669
+2019-07-09 14:48:13,232 [Thread-24:4240] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo" WHERE "webAPP_bookinfo"."id" = 100; args=(100,)
+2019-07-09 14:48:13,236 [Thread-24:4240] [django.server:124] [basehttp:log_message] [INFO]- "GET /xq/?p1=100 HTTP/1.1" 200 3740
+2019-07-09 14:48:13,289 [Thread-25:6552] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/icon.png HTTP/1.1" 404 1669
+2019-07-09 14:49:38,893 [Thread-26:10848] [django.server:124] [basehttp:log_message] [INFO]- "GET /buy?count_products=1 HTTP/1.1" 301 0
+2019-07-09 14:49:38,903 [Thread-27:2980] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-07-09 06:49:38.898389' AND "django_session"."session_key" = 'zoik3uurk52vhvg65mal9tb01ms7v1mb'); args=('2019-07-09 06:49:38.898389', 'zoik3uurk52vhvg65mal9tb01ms7v1mb')
+2019-07-09 14:49:38,904 [Thread-27:2980] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-07-09 14:49:38,905 [Thread-27:2980] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) INSERT INTO "webAPP_orders" ("time", "buyer", "seller", "book_id", "count_product", "money") VALUES ('2019-07-09 14:49:38.904583', 1, 1, 1, NULL, NULL); args=['2019-07-09 14:49:38.904583', 1, 1, 1, None, None]
+2019-07-09 14:49:39,097 [Thread-27:2980] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "webAPP_orders"."id", "webAPP_orders"."time", "webAPP_orders"."buyer", "webAPP_orders"."seller", "webAPP_orders"."book_id", "webAPP_orders"."count_product", "webAPP_orders"."money" FROM "webAPP_orders"  LIMIT 21; args=()
+2019-07-09 14:49:39,160 [Thread-27:2980] [django.server:124] [basehttp:log_message] [ERROR]- "GET /buy/?count_products=1 HTTP/1.1" 500 149714
+2019-07-09 14:50:29,938 [Thread-31:8096] [django.server:124] [basehttp:log_message] [INFO]- "GET /save/ HTTP/1.1" 200 8384
+2019-07-09 14:50:29,988 [Thread-30:8068] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'up_img'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'login/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'mygxin/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'myorderq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'xq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'object2/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'upload/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'change/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'buy/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'index/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'save/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'shopping_cart/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'order/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'writeorder/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'search/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'orderxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'objectxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'personal/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'save/..images/loading_pop.gif'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-07-09 14:50:30,001 [Thread-30:8068] [django.server:124] [basehttp:log_message] [WARNING]- "GET /save/..images/loading_pop.gif HTTP/1.1" 404 5414
+2019-07-09 14:50:30,008 [Thread-33:10860] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/bg_title_favorites.gif HTTP/1.1" 404 1711
+2019-07-09 14:50:30,014 [Thread-32:13008] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/bg_tab_favorites.gif HTTP/1.1" 404 1705
+2019-07-09 14:50:30,018 [Thread-34:1720] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/bg_myfavo.png HTTP/1.1" 404 1684
+2019-07-09 14:52:25,501 [Dummy-1:12448] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2019-07-09 14:52:25,506 [Dummy-1:12448] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2019-07-09 14:52:28,927 [Thread-2:11036] [django.server:124] [basehttp:log_message] [INFO]- "GET /save/ HTTP/1.1" 200 8381
+2019-07-09 14:52:28,968 [Thread-3:1876] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'up_img'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'login/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'mygxin/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'myorderq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'xq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'object2/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'upload/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'change/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'buy/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'index/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'save/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'shopping_cart/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'order/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'writeorder/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'search/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'orderxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'objectxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'personal/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'save/..images/loading_pop.gif'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-07-09 14:52:28,990 [Thread-5:11856] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/bg_tab_favorites.gif HTTP/1.1" 404 1705
+2019-07-09 14:52:28,997 [Thread-4:9956] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/bg_title_favorites.gif HTTP/1.1" 404 1711
+2019-07-09 14:52:28,998 [Thread-6:8868] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/bg_myfavo.png HTTP/1.1" 404 1684
+2019-07-09 14:52:29,052 [Thread-3:1876] [django.server:124] [basehttp:log_message] [WARNING]- "GET /save/..images/loading_pop.gif HTTP/1.1" 404 5414
+2019-07-09 14:53:44,749 [Thread-8:12160] [django.server:124] [basehttp:log_message] [INFO]- "GET /shopping_cart/ HTTP/1.1" 200 9936
+2019-07-09 14:53:44,834 [Thread-7:11752] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/shopping_total.png HTTP/1.1" 404 1699
+2019-07-09 14:53:44,841 [Thread-9:9488] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/pop_del_bg.png HTTP/1.1" 404 1687
+2019-07-09 14:54:56,664 [Thread-11:12368] [django.server:124] [basehttp:log_message] [INFO]- "GET /writeorder/ HTTP/1.1" 200 15004
+2019-07-09 14:54:56,720 [Thread-10:1460] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/%E8%B4%AD%E7%89%A9%E8%BD%A6logo%E6%A1%86 HTTP/1.1" 404 1717
+2019-07-09 14:54:56,732 [Thread-12:8464] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/icon_bg.png HTTP/1.1" 404 1678
+2019-07-09 14:54:56,733 [Thread-13:6208] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/bg_line.gif HTTP/1.1" 404 1678
+2019-07-09 14:55:01,453 [Thread-15:8888] [django.server:124] [basehttp:log_message] [INFO]- "GET /order/ HTTP/1.1" 200 10195
+2019-07-09 14:56:40,767 [Thread-19:772] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/bg_title_favorites.gif HTTP/1.1" 404 1711
+2019-07-09 14:56:40,768 [Thread-18:3460] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/bg_tab_favorites.gif HTTP/1.1" 404 1705
+2019-07-09 14:56:40,792 [Thread-20:12152] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/bg_myfavo.png HTTP/1.1" 404 1684
+2019-07-09 14:56:47,698 [Thread-25:8400] [django.db.backends:111] [utils:execute] [DEBUG]- (0.003) SELECT "webAPP_user"."id", "webAPP_user"."username", "webAPP_user"."password", "webAPP_user"."permission", "webAPP_user"."name", "webAPP_user"."age", "webAPP_user"."gender" FROM "webAPP_user" WHERE "webAPP_user"."username" = 'yyl'; args=('yyl',)
+2019-07-09 14:56:47,703 [Thread-25:8400] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-07-09 06:56:47.700018' AND "django_session"."session_key" = 'zoik3uurk52vhvg65mal9tb01ms7v1mb'); args=('2019-07-09 06:56:47.700018', 'zoik3uurk52vhvg65mal9tb01ms7v1mb')
+2019-07-09 14:56:47,712 [Thread-25:8400] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2019-07-09 14:56:47,717 [Thread-25:8400] [django.db.backends:111] [utils:execute] [DEBUG]- (0.004) UPDATE "django_session" SET "session_data" = 'ODNkNTBmY2YxNGI0ZGJkODRjZDdkYTVjMTZjOTdmNjljOGZmYThkOTp7ImxvZ2luX2lkIjoxfQ==', "expire_date" = '2019-07-23 06:56:47.712074' WHERE "django_session"."session_key" = 'zoik3uurk52vhvg65mal9tb01ms7v1mb'; args=('ODNkNTBmY2YxNGI0ZGJkODRjZDdkYTVjMTZjOTdmNjljOGZmYThkOTp7ImxvZ2luX2lkIjoxfQ==', '2019-07-23 06:56:47.712074', 'zoik3uurk52vhvg65mal9tb01ms7v1mb')
+2019-07-09 14:56:47,730 [Thread-25:8400] [django.server:124] [basehttp:log_message] [INFO]- "POST /login/ HTTP/1.1" 302 0
+2019-07-09 14:56:47,742 [Thread-26:3324] [django.server:124] [basehttp:log_message] [INFO]- "GET /mygxin/ HTTP/1.1" 200 3110
+2019-07-09 14:57:08,734 [Thread-28:11516] [django.server:124] [basehttp:log_message] [INFO]- "GET /myorderq/ HTTP/1.1" 200 8411
+2019-07-09 14:57:08,778 [Thread-27:9428] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/img/gt1.png HTTP/1.1" 404 1657
+2019-07-09 14:57:08,801 [Thread-31:4508] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/img/gt4.png HTTP/1.1" 404 1657
+2019-07-09 14:57:08,802 [Thread-29:4072] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/img/gt2.png HTTP/1.1" 404 1657
+2019-07-09 14:57:08,803 [Thread-30:13004] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/img/gt3.png HTTP/1.1" 404 1657
+2019-07-09 14:57:08,808 [Thread-32:6332] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/img/ds.png HTTP/1.1" 404 1654
+2019-07-09 14:57:11,159 [Thread-34:7944] [django.server:124] [basehttp:log_message] [INFO]- "GET /mygxin/ HTTP/1.1" 200 3110
+2019-07-09 14:57:12,479 [Thread-35:9740] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-07-09 06:57:12.475869' AND "django_session"."session_key" = 'zoik3uurk52vhvg65mal9tb01ms7v1mb'); args=('2019-07-09 06:57:12.475869', 'zoik3uurk52vhvg65mal9tb01ms7v1mb')
+2019-07-09 14:57:12,485 [Thread-35:9740] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo" WHERE "webAPP_bookinfo"."seller_id" = 1; args=(1,)
+2019-07-09 14:57:12,498 [Thread-35:9740] [django.server:124] [basehttp:log_message] [INFO]- "GET /index/ HTTP/1.1" 200 1715
+2019-07-09 14:57:12,532 [Thread-36:2408] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/cel.png?1440721029 HTTP/1.1" 404 1677
+2019-07-09 14:57:48,925 [Thread-37:6496] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-07-09 06:57:48.920266' AND "django_session"."session_key" = 'zoik3uurk52vhvg65mal9tb01ms7v1mb'); args=('2019-07-09 06:57:48.920266', 'zoik3uurk52vhvg65mal9tb01ms7v1mb')
+2019-07-09 14:57:48,927 [Thread-37:6496] [django.db.backends:111] [utils:execute] [DEBUG]- (0.000) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo" WHERE "webAPP_bookinfo"."seller_id" = 1; args=(1,)
+2019-07-09 14:57:48,939 [Thread-37:6496] [django.server:124] [basehttp:log_message] [INFO]- "GET /index/ HTTP/1.1" 200 1715
+2019-07-09 14:57:48,983 [Thread-38:11988] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/images/cel.png?1440721029 HTTP/1.1" 404 1677
+2019-07-09 14:59:55,333 [Thread-40:1592] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-07-09 06:59:55.328111' AND "django_session"."session_key" = 'zoik3uurk52vhvg65mal9tb01ms7v1mb'); args=('2019-07-09 06:59:55.328111', 'zoik3uurk52vhvg65mal9tb01ms7v1mb')
+2019-07-09 14:59:55,339 [Thread-40:1592] [django.server:124] [basehttp:log_message] [INFO]- "GET /upload/ HTTP/1.1" 200 5230
+2019-07-09 14:59:55,359 [Thread-39:6712] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/%E5%95%86%E5%93%81%E6%B7%BB%E5%8A%A0register.css HTTP/1.1" 304 0
+2019-07-09 14:59:55,383 [Thread-41:8884] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/img/register/register_bgPicture.jpg HTTP/1.1" 404 1729
+2019-07-09 14:59:55,384 [Thread-42:4148] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/img/login/LoginIn-icon.png HTTP/1.1" 404 1702
+2019-07-09 15:00:44,588 [Thread-43:11884] [django.server:124] [basehttp:log_message] [INFO]- "GET /myorderq/ HTTP/1.1" 200 8411
+2019-07-09 15:00:44,643 [Thread-44:4068] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/img/gt1.png HTTP/1.1" 404 1657
+2019-07-09 15:00:44,660 [Thread-46:12040] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/img/gt3.png HTTP/1.1" 404 1657
+2019-07-09 15:00:44,660 [Thread-45:472] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/img/gt2.png HTTP/1.1" 404 1657
+2019-07-09 15:00:44,660 [Thread-47:13184] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/img/gt4.png HTTP/1.1" 404 1657
+2019-07-09 15:00:44,665 [Thread-48:1160] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/img/ds.png HTTP/1.1" 404 1654
+2019-07-09 15:01:54,314 [Thread-49:4036] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'up_img'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'login/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'mygxin/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'myorderq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'xq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'object2/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'upload/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'change/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'buy/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'index/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'save/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'shopping_cart/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'order/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'writeorder/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'search/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'orderxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'objectxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'personal/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'HOME'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-07-09 15:01:54,318 [Thread-49:4036] [django.server:124] [basehttp:log_message] [WARNING]- "GET /HOME HTTP/1.1" 404 5339
+2019-07-09 15:02:00,056 [Thread-51:9116] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo"  LIMIT 5 OFFSET 70; args=()
+2019-07-09 15:02:00,073 [Thread-51:9116] [django.server:124] [basehttp:log_message] [INFO]- "GET /home/ HTTP/1.1" 200 17081
+2019-07-09 15:02:00,152 [Thread-52:3356] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'up_img'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'login/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'mygxin/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'myorderq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'xq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'object2/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'upload/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'change/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'buy/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'index/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'save/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'shopping_cart/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'order/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'writeorder/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'search/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'orderxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'objectxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'personal/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'home/jquery-3.1.1.min.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-07-09 15:02:00,170 [Thread-53:11472] [django.template:872] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'up_img'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'login/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'mygxin/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'myorderq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'xq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'object2/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'upload/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'change/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'buy/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'index/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'home/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'save/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'shopping_cart/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'order/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'writeorder/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'search/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'orderxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'objectxq/'>], [<URLResolver <module 'webAPP.urls' from 'D:\\swProject\\pyCharm\\webDjango\\webAPP\\urls.py'> (None:None) ''>, <URLPattern 'personal/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'home/js.js'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-07-09 15:02:00,182 [Thread-52:3356] [django.server:124] [basehttp:log_message] [WARNING]- "GET /home/jquery-3.1.1.min.js HTTP/1.1" 404 5399
+2019-07-09 15:02:00,185 [Thread-53:11472] [django.server:124] [basehttp:log_message] [WARNING]- "GET /home/js.js HTTP/1.1" 404 5357
+2019-07-09 15:02:00,229 [Thread-54:4616] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_logo.gif HTTP/1.1" 404 1690
+2019-07-09 15:02:00,238 [Thread-55:9648] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_header_search_top.jpg HTTP/1.1" 404 1729
+2019-07-09 15:02:00,252 [Thread-56:6568] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_cate_icon.gif HTTP/1.1" 404 1720
+2019-07-09 15:02:00,274 [Thread-57:4044] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_bg.jpg HTTP/1.1" 404 1699
+2019-07-09 15:02:00,307 [Thread-58:11168] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_seven_bg1.jpg HTTP/1.1" 404 1705
+2019-07-09 15:02:00,344 [Thread-59:10888] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_01.gif HTTP/1.1" 404 1708
+2019-07-09 15:02:00,367 [Thread-60:12972] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_04.gif HTTP/1.1" 404 1708
+2019-07-09 15:02:00,401 [Thread-61:5072] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_05.gif HTTP/1.1" 404 1708
+2019-07-09 15:02:00,421 [Thread-62:5248] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_06.gif HTTP/1.1" 404 1708
+2019-07-09 15:02:00,427 [Thread-63:12320] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_07.gif HTTP/1.1" 404 1708
+2019-07-09 15:02:00,445 [Thread-64:2660] [django.server:124] [basehttp:log_message] [WARNING]- "GET /static/css/images/dd_book_no_08.gif HTTP/1.1" 404 1708
+2019-07-09 15:02:02,189 [Thread-66:5036] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo"; args=()
+2019-07-09 15:02:03,035 [Thread-66:5036] [django.server:124] [basehttp:log_message] [INFO]- "GET /search/ HTTP/1.1" 200 5622886
+2019-07-09 15:02:24,179 [Thread-69:6428] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo"; args=()
+2019-07-09 15:02:26,213 [Thread-69:6428] [django.server:124] [basehttp:log_message] [INFO]- "GET /search/ HTTP/1.1" 200 5622886
+2019-07-09 15:02:26,216 [Thread-70:12748] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo"; args=()
+2019-07-09 15:02:26,263 [Thread-69:6428] [django.server:124] [basehttp:log_message] [ERROR]- "GET /search/ HTTP/1.1" 500 59
+2019-07-09 15:02:27,170 [Thread-70:12748] [django.server:124] [basehttp:log_message] [INFO]- "GET /search/ HTTP/1.1" 200 5622886
+2019-07-09 15:02:27,419 [Thread-72:3188] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo"; args=()
+2019-07-09 15:02:30,158 [Thread-72:3188] [django.server:124] [basehttp:log_message] [INFO]- "GET /search/ HTTP/1.1" 200 5622886
+2019-07-09 15:02:51,442 [Thread-76:7144] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo"; args=()
+2019-07-09 15:02:51,778 [Thread-75:2740] [django.db.backends:111] [utils:execute] [DEBUG]- (0.007) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo"; args=()
+2019-07-09 15:02:52,712 [Thread-76:7144] [django.server:124] [basehttp:log_message] [INFO]- "GET /search/ HTTP/1.1" 200 5622886
+2019-07-09 15:02:52,716 [Thread-76:7144] [django.server:124] [basehttp:log_message] [ERROR]- "GET /search/ HTTP/1.1" 500 59
+2019-07-09 15:02:53,534 [Thread-77:208] [django.db.backends:111] [utils:execute] [DEBUG]- (0.028) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo"; args=()
+2019-07-09 15:02:53,622 [Thread-75:2740] [django.server:124] [basehttp:log_message] [INFO]- "GET /search/ HTTP/1.1" 200 5622886
+2019-07-09 15:02:53,625 [Thread-75:2740] [django.server:124] [basehttp:log_message] [ERROR]- "GET /search/ HTTP/1.1" 500 59
+2019-07-09 15:02:54,761 [Thread-77:208] [django.server:124] [basehttp:log_message] [INFO]- "GET /search/ HTTP/1.1" 200 5622886
+2019-07-09 15:02:55,263 [Thread-78:7676] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo"; args=()
+2019-07-09 15:02:57,906 [Thread-78:7676] [django.server:124] [basehttp:log_message] [INFO]- "GET /search/ HTTP/1.1" 200 5622886
+2019-07-09 15:03:10,164 [Thread-79:4000] [django.db.backends:111] [utils:execute] [DEBUG]- (0.002) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo"; args=()
+2019-07-09 15:03:12,767 [Thread-79:4000] [django.server:124] [basehttp:log_message] [INFO]- "GET /search/ HTTP/1.1" 200 5622886
+2019-07-09 15:03:48,039 [Thread-81:7308] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo"; args=()
+2019-07-09 15:03:48,876 [Thread-81:7308] [django.server:124] [basehttp:log_message] [INFO]- "GET /search/ HTTP/1.1" 200 5622886
+2019-07-09 15:03:48,878 [Thread-81:7308] [django.server:124] [basehttp:log_message] [ERROR]- "GET /search/ HTTP/1.1" 500 59
+2019-07-09 15:03:49,546 [Thread-82:3844] [django.db.backends:111] [utils:execute] [DEBUG]- (0.001) SELECT "webAPP_bookinfo"."id", "webAPP_bookinfo"."isbn", "webAPP_bookinfo"."title", "webAPP_bookinfo"."author", "webAPP_bookinfo"."publish", "webAPP_bookinfo"."publish_year", "webAPP_bookinfo"."score", "webAPP_bookinfo"."price", "webAPP_bookinfo"."description", "webAPP_bookinfo"."img", "webAPP_bookinfo"."kind", "webAPP_bookinfo"."tag", "webAPP_bookinfo"."seller_id" FROM "webAPP_bookinfo"; args=()
+2019-07-09 15:03:50,427 [Thread-82:3844] [django.server:124] [basehttp:log_message] [INFO]- "GET /search/ HTTP/1.1" 200 5622886

@@ -777,3 +777,85 @@ KeyError: 'login_id'
 2019-07-09 09:58:19,182 [Thread-52:16112] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/jquery-3.1.1.min.js
 2019-07-09 09:58:19,196 [Thread-54:2880] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/js.js
 2019-07-09 13:54:11,610 [Thread-5:11052] [django.request:228] [log:log_response] [WARNING]- Not Found: /favicon.ico
+2019-07-09 14:21:46,441 [Thread-41:1512] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/jquery-3.1.1.min.js
+2019-07-09 14:21:46,449 [Thread-42:12532] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/js.js
+2019-07-09 14:21:58,436 [Thread-82:7000] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/jquery-3.1.1.min.js
+2019-07-09 14:21:58,459 [Thread-83:2380] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/js.js
+2019-07-09 14:22:50,625 [Thread-131:12724] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/js.js
+2019-07-09 14:22:50,636 [Thread-130:12388] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/jquery-3.1.1.min.js
+2019-07-09 14:22:50,800 [Thread-143:9072] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/js.js
+2019-07-09 14:23:01,374 [Thread-153:6964] [django.request:228] [log:log_response] [WARNING]- Not Found: /save/..images/loading_pop.gif
+2019-07-09 14:23:05,269 [Thread-162:7808] [django.request:228] [log:log_response] [WARNING]- Not Found: /save/..images/loading_pop.gif
+2019-07-09 14:23:09,068 [Thread-169:2676] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/jquery-3.1.1.min.js
+2019-07-09 14:23:09,070 [Thread-170:9228] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/js.js
+2019-07-09 14:23:12,919 [Thread-186:2832] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/jquery-3.1.1.min.js
+2019-07-09 14:23:12,921 [Thread-187:2008] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/js.js
+2019-07-09 14:23:15,397 [Thread-199:4288] [django.request:228] [log:log_response] [WARNING]- Not Found: /save/..images/loading_pop.gif
+2019-07-09 14:23:17,570 [Thread-204:11164] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/jquery-3.1.1.min.js
+2019-07-09 14:23:17,574 [Thread-206:2772] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/js.js
+2019-07-09 14:23:26,217 [Thread-225:2896] [django.request:228] [log:log_response] [WARNING]- Not Found: /save/..images/loading_pop.gif
+2019-07-09 14:23:33,387 [Thread-233:2888] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/jquery-3.1.1.min.js
+2019-07-09 14:23:33,419 [Thread-234:1760] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/js.js
+2019-07-09 14:23:45,447 [Thread-250:7668] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/js.js
+2019-07-09 14:23:45,464 [Thread-251:880] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/jquery-3.1.1.min.js
+2019-07-09 14:23:45,590 [Thread-263:5328] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/js.js
+2019-07-09 14:26:28,969 [Thread-275:2320] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/jquery-3.1.1.min.js
+2019-07-09 14:26:29,014 [Thread-277:7348] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/js.js
+2019-07-09 14:27:38,764 [Thread-292:3588] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/jquery-3.1.1.min.js
+2019-07-09 14:27:38,791 [Thread-293:4128] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/js.js
+2019-07-09 14:27:44,417 [Thread-309:13056] [django.request:228] [log:log_response] [WARNING]- Not Found: /save/..images/loading_pop.gif
+2019-07-09 14:44:00,282 [Thread-6:7244] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/jquery-3.1.1.min.js
+2019-07-09 14:44:00,287 [Thread-8:2068] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/js.js
+2019-07-09 14:49:39,148 [Thread-27:2980] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /buy/
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: webAPP_orders.count_product
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\swProject\pyCharm\webDjango\webAPP\views.py", line 184, in buy
+    buys.save()
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\db\models\base.py", line 718, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\db\models\base.py", line 748, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\db\models\base.py", line 831, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\db\models\base.py", line 869, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\db\models\query.py", line 1136, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\db\models\sql\compiler.py", line 1289, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\yyl\AppData\Roaming\Python\Python37\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: webAPP_orders.count_product
+2019-07-09 14:50:29,998 [Thread-30:8068] [django.request:228] [log:log_response] [WARNING]- Not Found: /save/..images/loading_pop.gif
+2019-07-09 14:52:29,050 [Thread-3:1876] [django.request:228] [log:log_response] [WARNING]- Not Found: /save/..images/loading_pop.gif
+2019-07-09 15:01:54,317 [Thread-49:4036] [django.request:228] [log:log_response] [WARNING]- Not Found: /HOME
+2019-07-09 15:02:00,181 [Thread-52:3356] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/jquery-3.1.1.min.js
+2019-07-09 15:02:00,184 [Thread-53:11472] [django.request:228] [log:log_response] [WARNING]- Not Found: /home/js.js

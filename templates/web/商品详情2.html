@@ -13,37 +13,27 @@
     		<div id="logo">荐书网</div>
                         <div class="menu">
                 <ul id="header-user">
-                    <li class="user-enroll">
-                        <a class="float_1" href="/regist">注册</a>
-                    </li>
-                    <li class="user">
-                        <a class="float_1" href="/login">登录</a>
-                    </li>
+
 
                     <li class="user">
-                        <a class="float_1" href="/save">我的收藏</a>
-                    </li>
-                    <li class="user">
-                        <a class="float_1" href="/shopping_cart">我的购物车</a>
-                    </li>
+                <a class="float_1" href="/save" style="margin-right: 20px">我的收藏</a>
+            </li>
+            <li class="user">
+                <a class="float_1" href="/shopping_cart">我的购物车</a>
+            </li>
+            <li class="user">
+                <a class="float_1" href="/order" style="margin-right: 20px;">订单</a>
+            </li>
                 </ul>
             </div>
 
-            <div class="search">
-                <form method="get" target="_blank">
-                    <input id="searchText">
-					<br>
-
-					<br>
-                </form>
-            </div>
     	</div>
 
 
     	<div id="info-main">
 			{% for book in details %}
-    		<div id="info-lside">
-				<img src={{ book.img }}>
+    		<div >
+				<img height="430"  src={{ book.img }}/>
 			</div>
 
     		<div id="info-rside">
@@ -105,16 +95,13 @@
     						<span>商品数量：</span>
     					</dt>
     					<dd>
-    						<div id="control-quantity">
-   							    <input id="quantity" type="text" value="1">
-   							    <div id="control">
-   							    	 <a class="plus" title="增加" href="javascript:;">+</a>
-    							     <a class="minus" title="减少" href="javascript:;">-</a>
-   							    </div>
-    						</div>
+    						<form id="control-quantity" action="/shopping_cart/" method="post">
+   							    <input id="quantity" name="count_product" type="number" value="1">
+   							    <button class="btn" type="submit">加入购物车</button>
+    						</form>
 
     						<div id="buy-it">
-    							<a class="btn" href="">加入购物车</a>
+
     							<a class="btn" href="/buy/?p4={{ book.id }}">立即购买</a>
     						</div>
                                <a class="favorite" href="">
@@ -130,49 +117,7 @@
 	
 
 
-    	<div id="footer">
-            <div class="footer_nav">
-                <a class="float_1" href="" target="_blank">公司简介</a>
-                <span class="sep">|</span>
 
-                <a class="float_1" href="" target="_blank">Investor Relations</a>
-                <span class="sep">|</span>
-
-                <a class="float_1" href="" target="_blank">诚聘英才</a>
-                <span class="sep">|</span>
-
-                <a class="float_1" href="" target="_blank">手机Desire</a>
-                <span class="sep">|</span>
-
-                <a class="float_1" href="" target="_blank">网站联盟</a>
-                <span class="sep">|</span>
-
-                <a class="float_1" href="" target="_blank">Desire招商</a>
-                <span class="sep">|</span>
-                
-                <a class="float_1" href="" target="_blank">机构销售</a>
-                <span class="sep">|</span>
-
-                <a class="float_1" href="" target="_blank">官方Blog</a>
-            </div>
-
-            <div class="footer_copyright">
-                <span>Copyright (C) Desire 2017, All Rights Reserved</span>
-            </div>
-
-            <div class="footer_copyright">
-                <a class="float_1" href="">京ICP证000000号</a>
-                <span class="sep">|</span>
-                <span>出版物经营许可证 南湖大道182号</span>
-                <span class="sep">|</span>
-                <span>食品流通许可证：SP1101011010021855(1-1)</span>
-                <br>
-                <span>互联网药品信息服务资格证编号：(京)-非经营性-0000-0000</span>
-                <span class="sep">|</span>
-                <span>京公网安备000000000000号</span>
-            </div>
-            
-        </div>
     </body>
 </html>
 

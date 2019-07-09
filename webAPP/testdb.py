@@ -26,8 +26,11 @@ def fenlei(request):
     fenleis = BookInfo.objects.all()
     return render_to_response("web/search.html",locals())
 def detail(request):
-    txt_de = request.GET.get("p2")
-    details = BookInfo.objects.filter(id = txt_de)
+    txt_id = request.GET.get("p2")
+    txt_price = request.GET.get("p5")
+    request.session['book_id'] = txt_id
+    request.session['book_price'] = txt_price
+    details = BookInfo.objects.filter(id = txt_id)
     # details = BookInfo.objects.filter(id=1)
     return render_to_response("web/商品详情2.html",locals())
 

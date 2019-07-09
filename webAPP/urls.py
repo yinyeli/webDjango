@@ -33,11 +33,11 @@ urlpatterns = [
     path('order/',views.order),
 
     # fzy
-    path('writeorder/',views.writeorder),
+    path('write/',views.write),
     path('search/',testdb.fenlei),
     path('orderxq/',views.orderxq),
     path('objectxq/',views.objectxq),
     path('personal/',views.personal),
 
-
+    path('writeorder/',views.writeorder),
 ]

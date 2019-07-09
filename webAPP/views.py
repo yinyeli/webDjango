@@ -1,4 +1,5 @@
 import datetime
+from tokenize import String
 
 from django.contrib.auth import authenticate
 from django.shortcuts import render, redirect
@@ -28,6 +29,7 @@ def login(request):
                 return render(request, 'web/登录.html',{'login_false':'用户名或密码为空'})
             if user.password == password:
                 request.session['login_id'] = user.id
+                request.session['login_username'] = user.username
                 if user.permission == 1: # 买家用户
                     return redirect('/home/')
                 elif user.permission == 2: # 卖家用户
@@ -87,8 +89,12 @@ def change(request):
 
 
 #商家
+def index(request):
+    return render(request, 'web/index.html')
 def mygxin(request):
-    return render(request, 'web/mygxin.html')
+    name = request.session['login_username']
+    print(name)
+    return render_to_response("web/mygxin.html", locals())
 def myorderq(request):
     return render(request, 'web/myorderq.html')
 def upload(request):
@@ -147,11 +153,42 @@ def home(request):
 def save(request): # 买家--->订单页面
     return render(request, 'web/我的收藏.html')
 def shopping_cart(request):
-    return render(request, 'web/我的购物车.html')
+    if request.method == "POST":
+        object_id = request.session['book_id']
+        object_price = request.session['book_price']
+        object_quantity = request.POST.get("count_product")
+        request.session['count']=object_quantity
+        objectinfos = BookInfo.objects.filter(id = object_id)
+        object_prices = int(object_quantity) * float(object_price)
+        return render_to_response('web/我的购物车.html',locals())
+    return render_to_response('web/我的购物车.html')
 def order(request):
     return render(request, 'web/订单界面.html')
+def write(request):
+
+        bookid = request.session['book_id']
+        #print(bookid)
+        bookprice = request.GET.get('p8')
+        #print(bookprice)
+        bookinfo = BookInfo.objects.filter(id=bookid)
+        bookquan = request.session['count']
+        return render_to_response('web/writeorder.html', locals())
+
 def writeorder(request):
-    return render(request, 'web/writeorder.html')
+    o_id = request.session['book_id']
+    o_quantity = request.GET.get('q2')
+    o_prices = request.GET.get('q1')
+    now_time = datetime.datetime.now()
+    order = Orders()
+    order.time = now_time
+    order.buyer = request.session['login_username']
+    order.seller = 1
+    order.book_id = o_id
+    order.count_product = o_quantity
+    order.money = o_prices
+    order.save()
+    return render(request, 'web/主页.html')
+
 def search(request):
     return render(request, 'web/search.html')
 def orderxq(request):
@@ -183,4 +220,9 @@ def buy(request):
     buys.book_id = book_id
     buys.save()
     return render(request, 'web/主页.html')
+
+# def me(request):
+#     Varchar: id = request.session['login_username']
+#     print(id)
+#     return render(request, 'web/mygxin.html')
 

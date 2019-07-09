@@ -18,6 +18,9 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+# 数据库保存上传的文件路径
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -77,22 +80,22 @@ WSGI_APPLICATION = 'webDjango.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+# DATABASES = {
+# #     'default': {
+# #         'ENGINE': 'django.db.backends.sqlite3',
+# #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+# #     }
+# # }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',  # 或者使用 mysql.connector.django
+        'NAME': 'mysql',
+        'USER': 'root',
+        'PASSWORD': '980704',
+        'HOST':'localhost',
+        'PORT':'3306',
     }
 }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',  # 或者使用 mysql.connector.django
-#         'NAME': 'bookStore',
-#         'USER': 'test',
-#         'PASSWORD': '123456',
-#         'HOST':'localhost',
-#         'PORT':'3306',
-#     }
-# }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
